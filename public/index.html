@@ -25,15 +25,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Caraman Optique</title>
+    <title>Mathieu ANTUNES</title>
   </head>
   <body>
     <style>
       :root {
-        --body-bg-color: #fff4e9;
-        --font-color: #111111;
-        --blue: #33473c;
-        --loading-bg-color: #fff4e9;
+        --body-bg-color: #052d23;
       }
       
       @font-face {
@@ -106,173 +103,9 @@
           opacity: 0;
         }
       }
-
-      .eyes-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3px;
-      }
-
-      .eye-container {
-        display: grid;
-        place-items: center;
-        width: 120px;
-        height: 120px;
-        transition: all .6s ease-in-out;
-      }
-
-      .eye {
-        position: relative;
-        display: grid;
-        place-items: center;
-        width: 60%;
-        height: 35%;
-        border-radius: 100%;
-        background-color: var(--loading-bg-color);
-        box-shadow: 0 0 0 .6em var(--blue);
-      }
-
-      .iris {
-        position: absolute;
-        display: grid;
-        place-items: center;
-        margin: auto;
-        width: 50%;
-        height: 85%;
-        border-radius: 100%;
-        background-color: var(--blue);
-        overflow: hidden;
-        animation: irisAnimation 6s cubic-bezier(.66,.36,.29,.89) infinite reverse;
-      }
-
-      @keyframes irisAnimation {
-        0% {
-          transform: scale(1.2);
-          margin-left: 0px;
-          margin-top: 0px;
-        }
-        25% {
-          transform: scale(1);
-          margin-left: 20px;
-          margin-top: 5px;
-        }
-        37% {
-          transform: scale(1.2);
-        }
-        50% {
-          transform: scale(1);
-          margin-left: -20px;
-          margin-top: -15px;
-        }
-        75% {
-          transform: scale(1);
-          margin-left: -20px;
-          margin-top: 15px;
-        }
-        80% {
-          transform: scale(1.2);
-        }
-        85% {
-          transform: scale(1);
-          margin-left: 40px;
-          margin-top: -15px;
-        }
-        100% {
-          transform: scale(1.2);
-          margin-left: 0px;
-          margin-top: 0px;
-        }
-      }
-
-      .eyelash {
-        z-index: 1;
-        width: .7em;
-        height: 50%;
-        border-radius: 25px 25px 0px 0px;
-        background-color: var(--blue);
-      }
-
-      .eye.white {
-        background-color: var(--blue);
-        box-shadow: 0 0 0 .6em var(--body-bg-color);
-      }
-
-      .iris.white {
-        background-color: var(--body-bg-color);
-      }
-
-      .eyelash.white {
-        background-color: var(--body-bg-color);
-      }
-
-      .eye .eyelash:nth-child(1) {
-        position: absolute;
-        top: -30px;
-      }
-
-      .eye .eyelash:nth-child(2) {
-        position: absolute;
-        top: -23px;
-        right: 2px;
-        transform: rotate(25deg);
-      }
-
-      .eye .eyelash:nth-child(3) {
-        position: absolute;
-        top: -5px;
-        right: -20px;
-        transform: rotate(55deg);
-      }
-
-      .eye .eyelash:nth-child(4) {
-        position: absolute;
-        top: -23px;
-        left: 2px;
-        transform: rotate(-25deg);
-      }
-
-      .eye .eyelash:nth-child(5) {
-        position: absolute;
-        top: -5px;
-        left: -20px;
-        transform: rotate(-55deg);
-      }
-
-      .logos-load {
-        filter: brightness(0) invert(1);
-      }
     </style>
     <noscript>Activez javascript pour assurer le fonctionnement du site.</noscript>
-    <div class="loading-component" id="loadingComponent">
-      <div class="logos-load">
-        <img src="%PUBLIC_URL%/img/logo.svg" alt="logo icon" />
-        <img src="%PUBLIC_URL%/img/logo-c-opt.svg" alt="logo-writing icon" />
-      </div>
-  
-      <div class="eyes-container">
-        <div class="eye-container" id="eye1">
-          <div class="eye white">
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="iris white" id="iris1"></div>
-          </div>
-        </div>
-  
-        <div class="eye-container" id="eye2">
-          <div class="eye white">
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="eyelash white"></div>
-            <div class="iris white" id="iris2"></div>
-          </div>
-        </div>
-      </div>
-  
+    <div class="loading-component" id="loadingComponent">   
       <p>Chargement
         <span>.</span> 
         <span>.</span> 

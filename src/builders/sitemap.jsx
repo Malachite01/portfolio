@@ -3,8 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 
 export const routes = [
   "#/",
-  "#/collections",
-  "#/examen_de_vue",
+  "#/projects",
+  "#/skills",
   "#/contact",
   "#/a_propos",
   "#/*"
