@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+# TODO change the link to have the right url
+Sitemap: https://caraman-optique.fr/sitemap.xml
