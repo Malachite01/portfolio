@@ -2,7 +2,7 @@ import Generator from 'react-router-sitemap-generator';
 import Router from './sitemap';
 
 const generator = new Generator(
-  'https://caraman-optique.fr/',
+  'https://malachite01.github.io/portfolio/',
   Router(),
   {
     lastmod: new Date().toISOString().slice(0, 10),

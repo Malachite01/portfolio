@@ -1,8 +1,8 @@
 {
-  "name": "caraman-optique",
+  "name": "@portfolio/mathieu-antunes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Malachite01.github.io",
+  "homepage": "https://malachite01.github.io/portfolio",
   "dependencies": {
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
