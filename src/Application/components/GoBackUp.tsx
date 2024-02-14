@@ -1,6 +1,5 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import arrowCircleUp from "../../img/arrow_circle_up.svg";
 
 const GoBackUp = () => {
   return (
