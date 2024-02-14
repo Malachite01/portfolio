@@ -1,12 +1,11 @@
 {
-  "short_name": "Caraman Optique",
-  "name": "Caraman Optique",
+  "short_name": "Mathieu ANTUNES Portfolio",
+  "name": "Mathieu ANTUNES Portfolio",
   "icons": [{
     "src": "favicons/favicon512.png",
     "sizes": "512x512"
   }],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#f0ebdd"
+  "theme_color": "#000000"
 }

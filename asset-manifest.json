@@ -1,32 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cd82a218.css",
-    "main.js": "/portfolio/static/js/main.1165eb03.js",
+    "main.css": "/portfolio/static/css/main.1c2a9c2e.css",
+    "main.js": "/portfolio/static/js/main.7aa79345.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
-    "static/media/home-magasin.jpg": "/portfolio/static/media/home-magasin.35b2b2a77df5c325dec8.jpg",
-    "static/media/Raleway.ttf": "/portfolio/static/media/Raleway.e14d84ccec6be3ff19e3.ttf",
-    "static/media/Raleway-Italic.ttf": "/portfolio/static/media/Raleway-Italic.41e517c091a20a1c6756.ttf",
-    "static/media/DMSerifDisplay.ttf": "/portfolio/static/media/DMSerifDisplay.ca478f5117e07586dd07.ttf",
-    "static/media/DMSerifDisplay-Italic.ttf": "/portfolio/static/media/DMSerifDisplay-Italic.0b4ff78851375d890aed.ttf",
-    "static/media/construction.jpg": "/portfolio/static/media/construction.7eb6542364cfab134aa4.jpg",
-    "static/media/refractor (2).png": "/portfolio/static/media/refractor (2).6b1638acf7ac44d8ee20.png",
-    "static/media/refractor (1).png": "/portfolio/static/media/refractor (1).32a48cf0c1112087afa5.png",
-    "static/media/refractor (3).png": "/portfolio/static/media/refractor (3).3d5240edb1094d9c7360.png",
-    "static/media/refractor (4).png": "/portfolio/static/media/refractor (4).e2d15f1f1b1d1319e28a.png",
-    "static/media/refractor (5).png": "/portfolio/static/media/refractor (5).914ea296bf16f50fc42c.png",
+    "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
+    "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
+    "static/media/self-portrait.png": "/portfolio/static/media/self-portrait.cbff6da37ed439dd29df.png",
+    "static/media/OpenSans-Italic.ttf": "/portfolio/static/media/OpenSans-Italic.ac68c5e0338c8b22b82f.ttf",
+    "static/media/OpenSans.ttf": "/portfolio/static/media/OpenSans.34835cd554b7b71732e2.ttf",
     "index.html": "/portfolio/index.html",
-    "static/media/logo-c-opt.svg": "/portfolio/static/media/logo-c-opt.57d824448fa051d0099719286f81a72a.svg",
-    "static/media/logo.svg": "/portfolio/static/media/logo.716c181d33df1cab68ec0d2add507f28.svg",
-    "static/media/schedule.svg": "/portfolio/static/media/schedule.811db72c043eaf2dfb3aef85a47b1ce8.svg",
     "static/media/home.svg": "/portfolio/static/media/home.97a5076a0efd364875808a050127f7c5.svg",
-    "static/media/close.svg": "/portfolio/static/media/close.1ded1e99216871d2a3aec0714440eb62.svg",
-    "static/media/expand.svg": "/portfolio/static/media/expand.730839144c126385607bf09f84d35c4f.svg",
-    "main.cd82a218.css.map": "/portfolio/static/css/main.cd82a218.css.map",
-    "main.1165eb03.js.map": "/portfolio/static/js/main.1165eb03.js.map",
+    "main.1c2a9c2e.css.map": "/portfolio/static/css/main.1c2a9c2e.css.map",
+    "main.7aa79345.js.map": "/portfolio/static/js/main.7aa79345.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd82a218.css",
-    "static/js/main.1165eb03.js"
+    "static/css/main.1c2a9c2e.css",
+    "static/js/main.7aa79345.js"
   ]
 }
