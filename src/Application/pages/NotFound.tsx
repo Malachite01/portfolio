@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import home from "../../img/home.svg";
-
 const NotFound = () => {
   return (
     <div className="not-found component" data-testid='not-found-component'>
@@ -11,7 +9,6 @@ const NotFound = () => {
 
       <Link className="link" to="/">
         <button className="home-button">
-          <img src={home} alt="home icon" />
           <p>Retournez à l'accueil</p>
         </button>
       </Link>

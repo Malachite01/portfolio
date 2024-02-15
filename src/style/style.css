@@ -1,5 +1,6 @@
 :root {
   --body-bg-color: #052d23;
+  --body-bg-color-values: 5, 45, 35;
   --accentuation-color: #dbff9a;
 
   --font-color-white: #f5f5f5;
@@ -103,16 +104,20 @@ p {
 .not-found {
   display: grid;
   place-items: center;
-  grid-template-rows: 1fr .5fr 1fr 2fr;
+  grid-template-rows: 1fr .5fr .5fr;
   font-family: var(--weird-font);
 }
 
 .not-found h1 {
   font-size: 7em;
+  color: var(--font-color-white);
 }
 
 .not-found h2 {
   text-align: center;
+  color: var(--font-color-grey);
+  font-family: var(--classic-font);
+  font-weight: 300;
 }
 
 .link {
@@ -128,26 +133,19 @@ p {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  font-family: var(--weird-font);
-  font-size: 1.1em;
-  text-decoration: underline;
-  color: var(--inverted-font-color);
-  background-color: var(--accentuation-color);
-  border-radius: var(--global-radius);
+  font-family: var(--classic-font);
+  font-weight: 500;
+  font-size: 1.3em;
+  color: var(--body-bg-color);
+  background-color: var(--font-color-white);
+  border-radius: 200px;
   border: none;
   padding: 2px 20px 2px 20px;
   transition: all .3s ease-in-out;
 }
 
-.home-button:hover::after  {
-  width: 200px;
-  height: 90px;
-  border-radius: 62% 38% 65% 35% / 30% 51% 49% 70%;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-}
-
 .home-button:hover {
-  background-color: var(--darker-blue);
+  background-color: var(--accentuation-color);
   cursor: pointer;
 }
 
@@ -380,23 +378,18 @@ nav ul {
   margin-left: 110px;
 }
 
-#self-portrait {
+.self-portrait {
   position: relative;
   width: 230px;
   height: 280px;
   bottom: 0;
-  left: 0;  
+  left: 0;
 }
 
-#self-portrait::after {
-  content: " ";
+.self-portrait.self-portrait-back {
   position: absolute;
-  margin-top: -10px;
-  margin-right: -10px;
-  width: 230px;
-  height: 280px;
-  background-color: red;
-  z-index: -1;
+  top: -10px;
+  left: -10px;
 }
 
 .home-text-container {
@@ -475,7 +468,7 @@ nav ul {
     align-self: center;
     font-size: 1.2em;
   }
-  #self-portrait {
+  .self-portrait {
     width: 170px;
     height: 200px;
   }
@@ -502,8 +495,8 @@ nav ul {
   width: 40%;
   height: 100%;
   background-image: -webkit-linear-gradient(left, 
-    rgba(5, 45, 35,1) 0%, 
-    rgba(5, 45, 35,.3) 100%
+    rgba(var(--body-bg-color-values),1) 0%, 
+    rgba(var(--body-bg-color-values),.3) 100%
   );  
 }
 
@@ -514,8 +507,8 @@ nav ul {
     width: 100%;
     height: 200px;
     background-image: -webkit-linear-gradient(top, 
-      rgba(5, 45, 35,1) 0%, 
-      rgba(5, 45, 35,.3) 100%
+      rgba(var(--body-bg-color-values),1) 0%, 
+      rgba(var(--body-bg-color-values),.3) 100%
     );
   }
 }

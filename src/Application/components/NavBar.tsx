@@ -1,15 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import 'transition-style';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const NavBar = () => {
-  const location = useLocation();
   const nav = useRef<HTMLDivElement | null>(null);
   const navLinks = useRef<HTMLDivElement | null>(null);
   const navLogos = useRef<HTMLDivElement | null>(null);
   const navHamburger = useRef<HTMLDivElement | null>(null);
   const [isOpen, setOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<string>('home');
   
   const closeNav = (e: MouseEvent) => {
     if (navLinks.current && navHamburger.current && !navLinks.current.contains(e.target as Node) && !navHamburger.current.contains(e.target as Node)) {
@@ -36,18 +37,42 @@ const NavBar = () => {
     }
   }, [isOpen]);
 
-  
-
   return (
     <div className='navbar-component' data-testid='navbar-component'>
       <nav ref={nav}>
         <div className="nav-links" ref={navLinks}>
           <ul onClick={() => setOpen(false)}>
-            <li><Link to="/" className={'nav-link' + (location.pathname === '/' ? ' selected' : '')}> Accueil</Link></li>
-            <li><Link to="/projects" className={'nav-link' + (location.pathname === '/projects' ? ' selected' : '')}> Projets</Link></li>
-            <li><Link to="/skills" className={'nav-link' + (location.pathname === '/skills' ? ' selected' : '')}> Compétences</Link></li>
-            <li><Link to="/contact" className={'nav-link' + (location.pathname === '/contact' ? ' selected' : '')}>Contact</Link></li>
-            <li><Link to="/a_propos" className={'nav-link' + (location.pathname === '/a_propos' ? ' selected' : '')}>A propos</Link></li>
+            <li>
+              <AnchorLink 
+                href="#top" 
+                className={'nav-link' + (selectedItem === 'home' ? ' selected' : '')} 
+                onClick={()=>{setSelectedItem('home')}}> Accueil
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink 
+                href="#projects" 
+                className={'nav-link' + (selectedItem === 'projects' ? ' selected' : '')}
+                onClick={()=>{setSelectedItem('projects')}}>Projets
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#skills" 
+                className={'nav-link' + (selectedItem === 'skills' ? ' selected' : '')}
+                onClick={()=>{setSelectedItem('skills')}}>Compétences
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#contact"
+                className={'nav-link' + (selectedItem === 'contact' ? ' selected' : '')}
+                onClick={()=>{setSelectedItem('contact')}}>Contact
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#contact"
+                className={'nav-link' + (selectedItem === 'about' ? ' selected' : '')}
+                onClick={()=>{setSelectedItem('about')}}>A propos
+              </AnchorLink></li>
           </ul>
         </div>
         
