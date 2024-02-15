@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import 'transition-style';
 import AnchorLink from "react-anchor-link-smooth-scroll";
