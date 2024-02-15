@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1c2a9c2e.css",
-    "main.js": "/portfolio/static/js/main.7aa79345.js",
+    "main.css": "/portfolio/static/css/main.073f63db.css",
+    "main.js": "/portfolio/static/js/main.6e5cc4a8.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
@@ -9,13 +9,12 @@
     "static/media/OpenSans-Italic.ttf": "/portfolio/static/media/OpenSans-Italic.ac68c5e0338c8b22b82f.ttf",
     "static/media/OpenSans.ttf": "/portfolio/static/media/OpenSans.34835cd554b7b71732e2.ttf",
     "index.html": "/portfolio/index.html",
-    "static/media/home.svg": "/portfolio/static/media/home.97a5076a0efd364875808a050127f7c5.svg",
-    "main.1c2a9c2e.css.map": "/portfolio/static/css/main.1c2a9c2e.css.map",
-    "main.7aa79345.js.map": "/portfolio/static/js/main.7aa79345.js.map",
+    "main.073f63db.css.map": "/portfolio/static/css/main.073f63db.css.map",
+    "main.6e5cc4a8.js.map": "/portfolio/static/js/main.6e5cc4a8.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c2a9c2e.css",
-    "static/js/main.7aa79345.js"
+    "static/css/main.073f63db.css",
+    "static/js/main.6e5cc4a8.js"
   ]
 }
