@@ -521,6 +521,7 @@ nav ul {
   position: relative;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .slider-container:after,
@@ -534,13 +535,13 @@ nav ul {
 }
 .slider-container:before {
   left: 0px;
-  width: 30%;
+  width: 15%;
   top: 0;
   background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(var(--body-bg-color-values), 1) 100%);
 }
 .slider-container:after {
   right: 0px;
-  width: 30%;
+  width: 15%;
   top: 0;
   background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(var(--body-bg-color-values), 1) 100%);
 }
@@ -549,7 +550,6 @@ nav ul {
   z-index: 2;
   cursor: pointer;
 }
-
 .custom-arrows svg {
   width: 40px;
   fill: var(--accentuation-color);
@@ -575,18 +575,22 @@ nav ul {
 .inner-slider .custom-arrows:nth-child(2) {
   margin-right: -100px;
 }
-
 .inner-slider .slick-dots {
   filter: invert(1) brightness(70%) sepia(100%) saturate(100%) hue-rotate(140deg);
 }
-
 .project {
-  display: grid;
-  place-items: center;
-  background-color: white;
+  position: relative;
   border-radius: 25px;
   margin: 20px;
+  /* TODO ici la taille a voir */
   height: 100%;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  background-color: white;
+}
+.project:hover {
+  transform: scale(1.02);
+  filter: brightness(0.9);
 }
 
 @media screen and (max-width: 580px) {
@@ -595,38 +599,65 @@ nav ul {
   }
 }
 
+.project-text {
+  position: relative;
+}
+
 .project h1 {
+  z-index: 3;
+  position: relative;
+  left: 10px;
   font-family: var(--weird-font);
-  font-size: 2em;
+  font-size: 1.5em;
+}
+.project h1 a {
+  text-decoration: none;
   color: var(--body-bg-color);
+  transition: all .3s ease-in-out;
+}
+.project h1 a:hover {
+  color: color-mix(in srgb,var(--body-bg-color),#7c10ff 50%);
 }
 
 .project img {
-  border-radius: 25px;
-  /* TODO FIX IMAGE */
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.project::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255, 255, 255, 1));
+  border-radius: 0 0 25px 25px;
 }
 
 .project p {
+  z-index: 3;
+  position: relative;
   font-family: var(--classic-font);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: thin;
   color: var(--body-bg-color);
-  display: grid;
-  place-items: center;
-  background-color: rgba(0, 0, 0, 0.079);
-  border-radius: 25px;
-  margin: 20px;
-  padding: 50px;
-  width: 80%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
 }
 
 .title {
   font-family: var(--weird-font);
   font-size: 3em;
   color: var(--font-color-white);
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
+  margin-left: 20px;
   text-align: left;
 }
 
