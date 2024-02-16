@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6b18d594.css",
-    "main.js": "/portfolio/static/js/main.43ede422.js",
+    "main.css": "/portfolio/static/css/main.ea273f94.css",
+    "main.js": "/portfolio/static/js/main.40887269.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
     "static/media/self-portrait.png": "/portfolio/static/media/self-portrait.cbff6da37ed439dd29df.png",
+    "static/media/polyrythm.png": "/portfolio/static/media/polyrythm.bf17ad28d100f5f98811.png",
+    "static/media/jeu.png": "/portfolio/static/media/jeu.00f67b34d29953906514.png",
+    "static/media/tri-21.png": "/portfolio/static/media/tri-21.96e3deb388c5d8ad0ba3.png",
     "static/media/OpenSans-Italic.ttf": "/portfolio/static/media/OpenSans-Italic.ac68c5e0338c8b22b82f.ttf",
     "static/media/OpenSans.ttf": "/portfolio/static/media/OpenSans.34835cd554b7b71732e2.ttf",
-    "static/media/placeholder.png": "/portfolio/static/media/placeholder.a75e9dd18e89450e8e33.png",
+    "static/media/noise.png": "/portfolio/static/media/noise.b3b9cf28091bdc4e833a.png",
+    "static/media/electron-app.png": "/portfolio/static/media/electron-app.67810013a8a991c5e376.png",
+    "static/media/deezer-logo.jpg": "/portfolio/static/media/deezer-logo.e865d0dce2648fdef2a4.jpg",
     "index.html": "/portfolio/index.html",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "main.6b18d594.css.map": "/portfolio/static/css/main.6b18d594.css.map",
-    "main.43ede422.js.map": "/portfolio/static/js/main.43ede422.js.map",
+    "main.ea273f94.css.map": "/portfolio/static/css/main.ea273f94.css.map",
+    "main.40887269.js.map": "/portfolio/static/js/main.40887269.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b18d594.css",
-    "static/js/main.43ede422.js"
+    "static/css/main.ea273f94.css",
+    "static/js/main.40887269.js"
   ]
 }
