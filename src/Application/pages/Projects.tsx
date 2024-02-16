@@ -80,7 +80,7 @@ const Projects = () => {
               <div className="project">
                 <img src={project.imageSrc} alt={getImageFileName(project.imageSrc)} />
                 <div className="project-text">
-                  <h1><a href={project.gitUrl} target="_blank">{project.title}</a></h1>
+                  <h1><a href={project.gitUrl} target="_blank" rel="noreferrer">{project.title}</a></h1>
                   <p>{project.description}</p>
                 </div>
               </div>
