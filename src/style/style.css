@@ -2,6 +2,7 @@
   --body-bg-color: #052d23;
   --body-bg-color-values: 5, 45, 35;
   --accentuation-color: #dbff9a;
+  --secondary-accentuation-color: #f0c8d2;
 
   --font-color-white: #f5f5f5;
   --font-color-grey: #e1dadac6;
@@ -583,14 +584,16 @@ nav ul {
   border-radius: 25px;
   margin: 20px;
   /* TODO ici la taille a voir */
-  height: 100%;
+  height: 420px;
   transition: all .3s ease-in-out;
   overflow: hidden;
-  background-color: white;
 }
 .project:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   filter: brightness(0.9);
+}
+.project:hover::before {
+ color: var(--accentuation-color);
 }
 
 @media screen and (max-width: 580px) {
@@ -600,14 +603,22 @@ nav ul {
 }
 
 .project-text {
+  z-index: 5;
   position: relative;
+  top: -25px;
+  border-radius: 25px;
+  height: 100%;
+  background-color: #f2e7d9;
+  text-overflow: ellipsis;
 }
 
 .project h1 {
   z-index: 3;
   position: relative;
+  margin-top: 0;
+  top: 10px;
   left: 10px;
-  font-family: var(--weird-font);
+  font-family: var(--classic-font);
   font-size: 1.5em;
 }
 .project h1 a {
@@ -616,16 +627,31 @@ nav ul {
   transition: all .3s ease-in-out;
 }
 .project h1 a:hover {
-  color: color-mix(in srgb,var(--body-bg-color),#7c10ff 50%);
+  color:  color-mix(in srgb,var(--body-bg-color),#ffffff 60%);
 }
 
 .project img {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  object-fit: cover;
+  transform: translate(1%,0);
+  width: 98%;
   border-radius: 25px 25px 0 0;
+}
+
+.project::before {
+  content: "Vers le projet";
+  z-index: 10;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background-color: var(--body-bg-color);
+  color: var(--font-color-white);
+  border-radius: 50px;
+  padding: 13px 30px 13px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: var(--classic-font);
+  cursor: pointer;
 }
 
 .project::after {
@@ -633,9 +659,10 @@ nav ul {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255, 255, 255, 1));
+  transform: translate(1%,0);
+  width: 98%;
+  height: 70%;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0), #000000);
   border-radius: 0 0 25px 25px;
 }
 
@@ -645,10 +672,30 @@ nav ul {
   font-family: var(--classic-font);
   font-size: 1em;
   font-weight: thin;
-  color: var(--body-bg-color);
+  color:  color-mix(in srgb,var(--body-bg-color),#ffffff 40%);
   padding-left: 20px;
   padding-right: 20px;
-  text-align: justify;
+}
+
+.classic-button {
+  z-index: 5;
+  display: flex;
+  width: max-content;
+  background-color: var(--body-bg-color);
+  color: var(--font-color-white);
+  border-radius: 50px;
+  border: none;
+  padding: 13px 20px 13px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: var(--classic-font);
+  cursor: pointer;
+}
+
+.classic-button img {
+  filter: invert(1);
+  width: 30px;
+  padding-left: 10px;
 }
 
 .title {

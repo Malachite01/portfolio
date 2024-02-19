@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import arrow from "../../img/arrow_forward.svg";
 import electronApp from "../../img/projects/electron-app.png";
 import deezerLogo from "../../img/projects/deezer-logo.jpg";
 import polyrythm from "../../img/projects/polyrythm.png";
@@ -62,12 +63,12 @@ const Projects = () => {
   };
 
   const projectList = [
+    { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: '🎮 Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." },
     { gitUrl: "https://github.com/Malachite01/appTransfertMobile", imageSrc: electronApp, title: '📲 Application electron/nodeJS', description: "Conçue pour transférer automatiquement toutes les photos et fichiers d'un téléphone Android vers un ordinateur en un clic. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." },
     { gitUrl: "https://github.com/Malachite01/deezer_to_mp3", imageSrc: deezerLogo, title: '🎵 Deezer to MP3', description: 'Un Script Python permettant de sauvegarder localement votre playlist Deezer.' },
     { gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", imageSrc: polyrythm, title: '🎼 Visualiseur polyrythmique', description: "Un outil affichant simultanément plusieurs motifs rythmiques complexes pour visualiser les relations entre sons et image. Développé avec une approche mathématique à l'esprit, avec Unity C#." },
     { gitUrl: "https://github.com/Malachite01/Trisomie21-HG", imageSrc: tri, title: '🪙 Application Trisomie 21', description: "Une application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." },
     { gitUrl: "https://github.com/Malachite01/Image_processing_project", imageSrc: noise, title: "🖼️ Traitement d'images", description: "Un projet de traitement d'images permettant de réduire le bruit ou d'ajouter du bruit à des images en niveaux de gris en utilisant différents types de traitements mathématiques." },
-    { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: '🎮 Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." },
   ];
 
   return (
