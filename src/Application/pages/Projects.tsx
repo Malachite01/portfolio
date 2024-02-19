@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import arrow from "../../img/arrow_forward.svg";
 import electronApp from "../../img/projects/electron-app.png";
 import deezerLogo from "../../img/projects/deezer-logo.jpg";
 import polyrythm from "../../img/projects/polyrythm.png";
