@@ -1,5 +1,5 @@
 {
-  "short_name": "Mathieu ANTUNES Portfolio",
+  "short_name": "Mathieu ANTUNES",
   "name": "Mathieu ANTUNES Portfolio",
   "icons": [{
     "src": "favicons/favicon512.png",
@@ -7,5 +7,5 @@
   }],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000"
+  "theme_color": "#052d23"
 }

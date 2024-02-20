@@ -1,30 +1,34 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.63d6f8f0.css",
-    "main.js": "/portfolio/static/js/main.7814dc07.js",
+    "main.css": "/portfolio/static/css/main.03d1033b.css",
+    "main.js": "/portfolio/static/js/main.ae72ff1f.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
-    "static/media/self-portrait.png": "/portfolio/static/media/self-portrait.cbff6da37ed439dd29df.png",
-    "static/media/polyrythm.png": "/portfolio/static/media/polyrythm.bf17ad28d100f5f98811.png",
-    "static/media/jeu.png": "/portfolio/static/media/jeu.00f67b34d29953906514.png",
-    "static/media/tri-21.png": "/portfolio/static/media/tri-21.d9cb088536d4fd4537a7.png",
     "static/media/OpenSans-Italic.ttf": "/portfolio/static/media/OpenSans-Italic.ac68c5e0338c8b22b82f.ttf",
     "static/media/OpenSans.ttf": "/portfolio/static/media/OpenSans.34835cd554b7b71732e2.ttf",
-    "static/media/noise.png": "/portfolio/static/media/noise.b3b9cf28091bdc4e833a.png",
-    "static/media/electron-app.png": "/portfolio/static/media/electron-app.67810013a8a991c5e376.png",
-    "static/media/deezer-logo.jpg": "/portfolio/static/media/deezer-logo.e865d0dce2648fdef2a4.jpg",
+    "static/media/self-portrait.webp": "/portfolio/static/media/self-portrait.cd9b32eb3d6017c40a0e.webp",
+    "static/media/tri-21.webp": "/portfolio/static/media/tri-21.1bb123cb169d15f4e60c.webp",
+    "static/media/polyrythm.webp": "/portfolio/static/media/polyrythm.4a32baad915461bab654.webp",
+    "static/media/jeu.webp": "/portfolio/static/media/jeu.02a3c7b45bad3eaf3520.webp",
+    "static/media/electron-app.webp": "/portfolio/static/media/electron-app.d749f6967f18392acab0.webp",
+    "static/media/deezer-logo.webp": "/portfolio/static/media/deezer-logo.e17927b42fa99cec6bc5.webp",
+    "static/media/noise.webp": "/portfolio/static/media/noise.526d84441deb24e1b2bb.webp",
+    "static/media/mail.svg": "/portfolio/static/media/mail.b6f498dfc536228814cba57d873432ce.svg",
     "index.html": "/portfolio/index.html",
     "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
-    "main.63d6f8f0.css.map": "/portfolio/static/css/main.63d6f8f0.css.map",
-    "main.7814dc07.js.map": "/portfolio/static/js/main.7814dc07.js.map",
+    "static/media/github.svg": "/portfolio/static/media/github.90cc6c657a785e910171769e17c1fa79.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.d57dc3704e6ab707ac3d0368ab775211.svg",
+    "static/media/arrow_forward.svg": "/portfolio/static/media/arrow_forward.b6f67547223a7085487d018f01010bca.svg",
+    "main.03d1033b.css.map": "/portfolio/static/css/main.03d1033b.css.map",
+    "main.ae72ff1f.js.map": "/portfolio/static/js/main.ae72ff1f.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63d6f8f0.css",
-    "static/js/main.7814dc07.js"
+    "static/css/main.03d1033b.css",
+    "static/js/main.ae72ff1f.js"
   ]
 }
