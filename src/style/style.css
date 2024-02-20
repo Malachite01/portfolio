@@ -440,6 +440,12 @@ nav ul {
   width: 50%;
 }
 
+.home-text-container .socials {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+
 @media screen and (max-width: 960px) {
   .home-container-left {
     margin-left: 30px;
@@ -468,6 +474,14 @@ nav ul {
     width: 70%;
     align-self: center;
     font-size: 1.2em;
+  }
+  .home-text-container .socials {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 0px;
   }
   .self-portrait {
     width: 170px;
@@ -579,21 +593,20 @@ nav ul {
 .inner-slider .slick-dots {
   filter: invert(1) brightness(70%) sepia(100%) saturate(100%) hue-rotate(140deg);
 }
+.project-card-style {
+  position: relative;
+}
 .project {
   position: relative;
   border-radius: 25px;
   margin: 20px;
-  /* TODO ici la taille a voir */
   height: 420px;
   transition: all .3s ease-in-out;
   overflow: hidden;
 }
 .project:hover {
   transform: scale(1.05);
-  filter: brightness(0.9);
-}
-.project:hover::before {
- color: var(--accentuation-color);
+  filter: brightness(1.05);
 }
 
 @media screen and (max-width: 580px) {
@@ -620,14 +633,7 @@ nav ul {
   left: 10px;
   font-family: var(--classic-font);
   font-size: 1.5em;
-}
-.project h1 a {
-  text-decoration: none;
-  color: var(--body-bg-color);
-  transition: all .3s ease-in-out;
-}
-.project h1 a:hover {
-  color:  color-mix(in srgb,var(--body-bg-color),#ffffff 60%);
+  text-align: center;
 }
 
 .project img {
@@ -635,23 +641,6 @@ nav ul {
   transform: translate(1%,0);
   width: 98%;
   border-radius: 25px 25px 0 0;
-}
-
-.project::before {
-  content: "Vers le projet";
-  z-index: 10;
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%,0);
-  background-color: var(--body-bg-color);
-  color: var(--font-color-white);
-  border-radius: 50px;
-  padding: 13px 30px 13px 30px;
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: var(--classic-font);
-  cursor: pointer;
 }
 
 .project::after {
@@ -677,6 +666,53 @@ nav ul {
   padding-right: 20px;
 }
 
+.project-number  {
+  z-index: 10;
+  position: absolute;
+  top: -47%;
+  right: 30px;
+  font-family: var(--classic-font);
+  font-weight: bold;
+  font-size: 10em;
+  color: var(--accentuation-color);
+  mix-blend-mode: difference;
+}
+.project-card-style .classic-button {
+  position: relative;
+  top: -40px;
+  left: 25%;
+}
+
+
+/*!  __________________ */
+/*! |_____SOCIALS_____| */
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.social {
+  filter: brightness(0) invert(1);
+}
+
+.social:first-child img {
+  width: 44px;
+  padding: 5px 5px 0 0;
+  padding-right: 5px;
+}
+
+.social:not(:first-child) img {
+  width: 55px;
+}
+
+.social:hover {
+  filter: brightness(1) invert(1);
+}
+
+/*!  __________________ */
+/*! |_____GENERAL_____| */
+
 .classic-button {
   z-index: 5;
   display: flex;
@@ -690,21 +726,35 @@ nav ul {
   font-weight: bold;
   font-family: var(--classic-font);
   cursor: pointer;
+  transition: all .3s ease-in-out;
 }
-
 .classic-button img {
   filter: invert(1);
   width: 30px;
   padding-left: 10px;
+  transition: all .3s ease-in-out;
+}
+.classic-button.green:hover {
+  color: var(--accentuation-color);
+}
+.classic-button.green:hover img {
+  filter: invert(1) brightness(70%) saturate(100%);
+}
+.classic-button.white:hover {
+  background-color: white;
+  color: var(--body-bg-color);
+}
+.classic-button.white:hover img {
+  filter: invert(.2);
 }
 
 .title {
   font-family: var(--weird-font);
-  font-size: 3em;
+  font-size: 2.5em;
   color: var(--font-color-white);
   margin-top: 100px;
   margin-bottom: 50px;
-  margin-left: 20px;
+  margin-left: 50px;
   text-align: left;
 }
 
