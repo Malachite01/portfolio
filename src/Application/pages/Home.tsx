@@ -1,12 +1,17 @@
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
+import cv from "../../img/cv.pdf";
+import arrowBot from "../../img/expand.svg";
+import download from "../../img/download.svg";
 import selfPortrait from "../../img/self-portrait.webp";
-import Socials from "../components/Socials";
+// import Socials from "../components/Socials";
 
 const Home = () => {
 
   return (
     <div className="component home" data-testid='home-component'>
+      <p id="home" style={{display: "none"}}></p>
       <div className="first-container-home">
         <div className="home-container-left">
           <img src={selfPortrait} className="self-portrait self-portrait-back" transition-style="in:wipe:right" alt="selfie" />
@@ -15,7 +20,11 @@ const Home = () => {
             <h1 className="name">Mathieu <span>Antunes</span></h1>
             <h2 className="job" transition-style="in:wipe:bottom">Étudiant en Informatique</h2>
             <p transition-style="in:wipe:right">Actuellement en 3° année de BUT Informatique en spécialité déploiement d'applications communicantes et sécurisées</p>
-            <Socials />
+            <div className="home-button-container" transition-style="in:wipe:bottom">
+              {/*//! TODO change file */}
+              <AnchorLink href="#contact"><button className="classic-button white">Contact <img src={arrowBot} alt="Aller vers contact" /></button></AnchorLink>
+              <a href={cv} download='CV_Mathieu_ANTUNES.pdf'><button className="classic-button white">Mon CV  <img src={download} alt="Télécharger mon CV" style={{width :"25px", marginTop: "2.5px"}} /></button></a>
+            </div>
           </div>
         </div>
 

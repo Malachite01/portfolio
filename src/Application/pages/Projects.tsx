@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import electronApp from "../../img/projects/electron-app.webp";
+import ftp from "../../img/projects/ftp.webp";
 import deezerLogo from "../../img/projects/deezer-logo.webp";
 import polyrythm from "../../img/projects/polyrythm.webp";
 import game from "../../img/projects/jeu.webp";
@@ -61,6 +62,7 @@ const Projects = () => {
   const projectList = [
     { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: 'Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." },
     { gitUrl: "https://github.com/Malachite01/appTransfertMobile", imageSrc: electronApp, title: 'Application electron/nodeJS', description: "Conçue pour transférer automatiquement toutes les photos et fichiers d'un téléphone Android vers un ordinateur en un clic. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." },
+    { gitUrl: "https://github.com/Malachite01/proxy-ftp", imageSrc: ftp, title: 'Proxy FTP', description: "Développement d'un proxy applicatif FTP en C, avec un mode actif et passif" },
     { gitUrl: "https://github.com/Malachite01/deezer_to_mp3", imageSrc: deezerLogo, title: 'Deezer to MP3', description: "Un Script Python permettant de sauvegarder localement une playlist Deezer. Utilise l'API de Deezer, et un scrapper youtube pour télécharger." },
     { gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", imageSrc: polyrythm, title: 'Visualiseur polyrythmique', description: "Un outil affichant simultanément plusieurs motifs rythmiques complexes pour visualiser les relations entre sons et image. Développé avec une approche mathématique, avec Unity C#." },
     { gitUrl: "https://github.com/Malachite01/Trisomie21-HG", imageSrc: tri, title: 'Application Trisomie 21', description: "Une application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." },
@@ -68,8 +70,8 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="component projects" data-testid='projects-component'>
-      <h1 className="title">Projets</h1>
+    <div className="component projects" data-testid='projects-component'>
+      <h1 className="title" id="projects">Projets</h1>
       <div className="slider-container" transition-style="in:wipe:top-right">
         <Slider {...settings}>
           {projectList.map((project, index) => (

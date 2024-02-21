@@ -1,18 +1,21 @@
 import React from "react";
 import Home from "./Home";
-import Projects from "./Projects";
+import Formation from "./Formation";
+import Experiences from "./Experiences";
 import Skills from "./Skills";
+import Projects from "./Projects";
 import Contact from "./Contact";
-import About from "./About";
 
 const Portfolio = () => {
   return (
     <div id="top">
       <Home />
-      <Projects />
       <Skills />
+      <Formation />
+      <Experiences />
+      <Projects />
       <Contact />
-      <About />
+      <p id="fin-de-page">©Mathieu ANTUNES 2024 - Site réalisé en ReactJs CI/CD avec GitHub Pages</p>
     </div>
 
   );

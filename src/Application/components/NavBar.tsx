@@ -10,7 +10,7 @@ const NavBar = () => {
   const navHamburger = useRef<HTMLDivElement | null>(null);
   const [isOpen, setOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string>('home');
-  
+
   const closeNav = (e: MouseEvent) => {
     if (navLinks.current && navHamburger.current && !navLinks.current.contains(e.target as Node) && !navHamburger.current.contains(e.target as Node)) {
       setOpen(false);
@@ -46,31 +46,36 @@ const NavBar = () => {
                 href="#top" 
                 className={'nav-link' + (selectedItem === 'home' ? ' selected' : '')} 
                 onClick={()=>{setSelectedItem('home')}}> Accueil
-              </AnchorLink>
-            </li>
-            <li>
-              <AnchorLink 
-                href="#projects" 
-                className={'nav-link' + (selectedItem === 'projects' ? ' selected' : '')}
-                onClick={()=>{setSelectedItem('projects')}}>Projets
               </AnchorLink></li>
             <li>
               <AnchorLink 
                 href="#skills" 
                 className={'nav-link' + (selectedItem === 'skills' ? ' selected' : '')}
-                onClick={()=>{setSelectedItem('skills')}}>Compétences
+                onClick={()=>{setSelectedItem('skills')}}> Compétences
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#formations" 
+                className={'nav-link' + (selectedItem === 'formations' ? ' selected' : '')} 
+                onClick={()=>{setSelectedItem('formations')}}> Formation
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#experiences" 
+                className={'nav-link' + (selectedItem === 'experiences' ? ' selected' : '')} 
+                onClick={()=>{setSelectedItem('experiences')}}> Experiences
+              </AnchorLink></li>
+            <li>
+              <AnchorLink 
+                href="#projects" 
+                className={'nav-link' + (selectedItem === 'projects' ? ' selected' : '')}
+                onClick={()=>{setSelectedItem('projects')}}> Projets
               </AnchorLink></li>
             <li>
               <AnchorLink 
                 href="#contact"
                 className={'nav-link' + (selectedItem === 'contact' ? ' selected' : '')}
-                onClick={()=>{setSelectedItem('contact')}}>Contact
-              </AnchorLink></li>
-            <li>
-              <AnchorLink 
-                href="#contact"
-                className={'nav-link' + (selectedItem === 'about' ? ' selected' : '')}
-                onClick={()=>{setSelectedItem('about')}}>A propos
+                onClick={()=>{setSelectedItem('contact')}}> Contact
               </AnchorLink></li>
           </ul>
         </div>
