@@ -15,7 +15,7 @@ const Portfolio = () => {
       <Experiences />
       <Projects />
       <Contact />
-      <p id="fin-de-page">©Mathieu ANTUNES 2024 - Site réalisé en ReactJs CI/CD avec GitHub Pages</p>
+      <p id="fin-de-page">©Mathieu ANTUNES 2024 - Site réalisé en ReactJs, CI/CD avec GitHub Pages</p>
     </div>
 
   );

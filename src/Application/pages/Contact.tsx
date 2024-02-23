@@ -4,6 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 import send from "../../img/send.svg";
 import location from "../../img/location.svg";
+import wave from "../../img/wave.svg";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mvoeajva"); 
@@ -43,6 +44,7 @@ const Contact = () => {
           <div className="localisation"><img src={location} alt="ma localisation" width={35} />Toulouse, France</div>
         </div>
       </div>
+      <img id="wave" src={wave} alt="decorative img" />
     </div>
   );
 }

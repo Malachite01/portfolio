@@ -17,7 +17,8 @@ const Card: React.FC<CardProps> = ({ gitUrl, imageSrc, title, description, index
           <img src={imageSrc} alt={title} />
           <div className="project-text">
             <h1>{title}</h1>
-            <p>{description}</p>
+            <div className='separator'></div>
+            <p>&ensp;{description}</p>
           </div>
         </div>
         <p className="project-number">{index+1}</p>

@@ -10,11 +10,13 @@ const Skills = () => {
       <h1 className="title" id="skills">Competences</h1>
       <p>Voici les compétences que j'ai acquises durant ma formation et mes expériences professionnelles.</p>
 
-      <h2>Langages et Technologies</h2>
-      <div className="skills-img-container">
-        {iconList.map((icon, index) => (
-          <img key={index} src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} />
-        ))}
+      <div className="skills-bottom-container">
+        <h2>Technologies maitrisées</h2>
+        <div className="skills-img-container">
+          {iconList.map((icon, index) => (
+            <img key={index} src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} />
+          ))}
+        </div>
       </div>
     </div>
   );

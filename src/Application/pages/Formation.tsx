@@ -2,6 +2,7 @@ import React from "react";
 
 import iut from "../../img/formation/iut.webp";
 import lycee from "../../img/formation/lycee.webp";
+import dashed from "../../img/dashed.svg";
 
 const Formation = () => {
   const formationsList = [
@@ -24,7 +25,7 @@ const Formation = () => {
               <p>{formation.mention}</p>
             </div>
           </a>
-          <div className="separator"></div>
+          <img className="dashed" src={dashed} alt="dashed arrow svg" />
         </>
       ))}
     </div>

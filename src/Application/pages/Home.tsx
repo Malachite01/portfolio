@@ -21,7 +21,6 @@ const Home = () => {
             <h2 className="job" transition-style="in:wipe:bottom">Étudiant en Informatique</h2>
             <p transition-style="in:wipe:right">Actuellement en 3° année de BUT Informatique en spécialité déploiement d'applications communicantes et sécurisées</p>
             <div className="home-button-container" transition-style="in:wipe:bottom">
-              {/*//! TODO change file */}
               <AnchorLink href="#contact"><button className="classic-button white">Contact <img src={arrowBot} alt="Aller vers contact" /></button></AnchorLink>
               <a href={cv} download='CV_Mathieu_ANTUNES.pdf'><button className="classic-button white">Mon CV  <img src={download} alt="Télécharger mon CV" style={{width :"25px", marginTop: "2.5px"}} /></button></a>
             </div>
