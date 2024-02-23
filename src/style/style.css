@@ -497,7 +497,7 @@ nav ul {
     height: 200px;
   }
   .home-button-container {
-    margin-left: 0px;
+    margin-left: -30px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
@@ -573,7 +573,6 @@ nav ul {
 
 .formations {
   position: relative;
-  width: 80%;
   margin: 50px auto 0 auto;
 }
 
@@ -581,6 +580,11 @@ nav ul {
   position: absolute;
   margin-top: -30px;
   left: 0px;
+}
+
+.formations-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .formation {

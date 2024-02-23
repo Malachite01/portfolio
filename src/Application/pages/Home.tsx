@@ -5,13 +5,12 @@ import cv from "../../img/cv.pdf";
 import arrowBot from "../../img/expand.svg";
 import download from "../../img/download.svg";
 import selfPortrait from "../../img/self-portrait.webp";
-// import Socials from "../components/Socials";
 
 const Home = () => {
 
   return (
     <div className="component home" data-testid='home-component'>
-      <p id="home" style={{display: "none"}}></p>
+      <p id="home" style={{opacity: "0"}}></p>
       <div className="first-container-home">
         <div className="home-container-left">
           <img src={selfPortrait} className="self-portrait self-portrait-back" transition-style="in:wipe:right" alt="selfie" />

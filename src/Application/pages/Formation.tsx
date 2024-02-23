@@ -14,20 +14,22 @@ const Formation = () => {
   return (
     <div className="component formations" data-testid='formations-component'>
       <h1 className="title" id="formations">Formation</h1>
-      {formationsList.map((formation, index) => (
-        <>
-          <a href={formation.url} className="formation" key={index} target="_blank" rel="noreferrer">
-            <img src={formation.imageSrc} alt={formation.url}/>
-            <div>
-              <h2>{formation.annee}</h2>
-              <p className="diplome">{formation.diplome}</p>
-              <p>{formation.description}</p>
-              <p>{formation.mention}</p>
-            </div>
-          </a>
-          <img className="dashed" src={dashed} alt="dashed arrow svg" />
-        </>
-      ))}
+      <div className="formations-container">
+        {formationsList.map((formation, index) => (
+          <>
+            <a href={formation.url} className="formation" key={index} target="_blank" rel="noreferrer">
+              <img src={formation.imageSrc} alt={formation.url}/>
+              <div>
+                <h2>{formation.annee}</h2>
+                <p className="diplome">{formation.diplome}</p>
+                <p>{formation.description}</p>
+                <p>{formation.mention}</p>
+              </div>
+            </a>
+            <img className="dashed" src={dashed} alt="dashed arrow svg" />
+          </>
+        ))}
+      </div>
     </div>
   );
 }

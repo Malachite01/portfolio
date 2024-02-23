@@ -9,6 +9,8 @@ const NavBar = () => {
   const navLogos = useRef<HTMLDivElement | null>(null);
   const navHamburger = useRef<HTMLDivElement | null>(null);
   const [isOpen, setOpen] = useState(false);
+  const lastSectionInView = useRef<string | null>(null);
+  const sectionsInView = useRef<string[]>([]);
   const [selectedItem, setSelectedItem] = useState<string>('home');
 
   const closeNav = (e: MouseEvent) => {
@@ -36,6 +38,41 @@ const NavBar = () => {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    const sections = ['home', 'skills', 'formations', 'experiences', 'projects', 'contact'];
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!sectionsInView.current.includes(entry.target.id)) {
+            sectionsInView.current.push(entry.target.id);
+          }
+        } else {
+          sectionsInView.current = sectionsInView.current.filter((id) => id !== entry.target.id);
+        }
+      });
+      if (sectionsInView.current.length > 0) {
+        lastSectionInView.current = sectionsInView.current[sectionsInView.current.length - 1];
+        setSelectedItem(lastSectionInView.current);
+      }
+    }, { rootMargin: '0px', threshold: 0.5 });
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div className='navbar-component' data-testid='navbar-component'>
       <nav ref={nav}>
@@ -43,7 +80,7 @@ const NavBar = () => {
           <ul onClick={() => setOpen(false)}>
             <li>
               <AnchorLink 
-                href="#top" 
+                href="#home" 
                 className={'nav-link' + (selectedItem === 'home' ? ' selected' : '')} 
                 onClick={()=>{setSelectedItem('home')}}> Accueil
               </AnchorLink></li>
@@ -79,8 +116,6 @@ const NavBar = () => {
               </AnchorLink></li>
           </ul>
         </div>
-        
-      
       </nav>
 
       <div className="nav-hamburger" ref={navHamburger}>
