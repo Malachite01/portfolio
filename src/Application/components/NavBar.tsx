@@ -80,7 +80,7 @@ const NavBar = () => {
           <ul onClick={() => setOpen(false)}>
             <li>
               <AnchorLink 
-                href="#home" 
+                href="#top" 
                 className={'nav-link' + (selectedItem === 'home' ? ' selected' : '')} 
                 onClick={()=>{setSelectedItem('home')}}> Accueil
               </AnchorLink></li>
