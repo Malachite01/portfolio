@@ -16,8 +16,8 @@ const Formation = () => {
       <h1 className="title" id="formations">Formation</h1>
       <div className="formations-container">
         {formationsList.map((formation, index) => (
-          <>
-            <a href={formation.url} className="formation" key={index} target="_blank" rel="noreferrer">
+          <React.Fragment key={index}>
+            <a href={formation.url} className="formation" target="_blank" rel="noreferrer">
               <img src={formation.imageSrc} alt={formation.url}/>
               <div>
                 <h2>{formation.annee}</h2>
@@ -27,7 +27,7 @@ const Formation = () => {
               </div>
             </a>
             <img className="dashed" src={dashed} alt="dashed arrow svg" />
-          </>
+          </React.Fragment>
         ))}
       </div>
     </div>
