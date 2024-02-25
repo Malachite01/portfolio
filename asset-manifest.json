@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b5daf5b4.css",
-    "main.js": "/portfolio/static/js/main.f8351cd0.js",
+    "main.css": "/portfolio/static/css/main.4dde34ee.css",
+    "main.js": "/portfolio/static/js/main.d1950319.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
@@ -35,12 +35,12 @@
     "static/media/wave.svg": "/portfolio/static/media/wave.768278663c1a68c450c7b26c972ad22f.svg",
     "static/media/arrow_forward.svg": "/portfolio/static/media/arrow_forward.b6f67547223a7085487d018f01010bca.svg",
     "static/media/expand.svg": "/portfolio/static/media/expand.730839144c126385607bf09f84d35c4f.svg",
-    "main.b5daf5b4.css.map": "/portfolio/static/css/main.b5daf5b4.css.map",
-    "main.f8351cd0.js.map": "/portfolio/static/js/main.f8351cd0.js.map",
+    "main.4dde34ee.css.map": "/portfolio/static/css/main.4dde34ee.css.map",
+    "main.d1950319.js.map": "/portfolio/static/js/main.d1950319.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5daf5b4.css",
-    "static/js/main.f8351cd0.js"
+    "static/css/main.4dde34ee.css",
+    "static/js/main.d1950319.js"
   ]
 }
