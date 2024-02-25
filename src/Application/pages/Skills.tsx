@@ -7,7 +7,10 @@ const Skills = () => {
 
   return (
     <div className="component skills" data-testid='skills-component'>
-      <h1 className="title" id="skills">Competences</h1>
+      <div className="title-container">
+        <h1 className="title" id="skills">Competences</h1>
+        <div className="title-separator"></div>
+      </div>
       <p>Voici les compétences que j'ai acquises durant ma formation et mes expériences professionnelles.</p>
 
       <div className="skills-bottom-container">

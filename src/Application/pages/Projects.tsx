@@ -71,7 +71,10 @@ const Projects = () => {
 
   return (
     <div className="component projects" data-testid='projects-component'>
-      <h1 className="title" id="projects">Projets</h1>
+      <div className="title-container">
+        <h1 className="title" id="projects">Projets</h1>
+        <div className="title-separator"></div>
+      </div>
       <div className="slider-container" transition-style="in:wipe:top-right">
         <Slider {...settings}>
           {projectList.map((project, index) => (
@@ -81,6 +84,7 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               index={index}
+              key={index}
             />
           ))}
         </Slider>

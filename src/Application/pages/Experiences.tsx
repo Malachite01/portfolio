@@ -29,7 +29,10 @@ const Experiences = () => {
 
   return (
     <div className="component experiences" data-testid='experiences-component'>
-      <h1 className="title" id="experiences">Experiences</h1>
+      <div className="title-container">
+        <h1 className="title" id="experiences">Experiences</h1>
+        <div className="title-separator"></div>
+      </div>
       <ul className="experiences-list">
         {experiences.map((experience, index) => (
           <div className="experiences-card" key={index}>

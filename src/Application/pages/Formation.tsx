@@ -13,7 +13,10 @@ const Formation = () => {
 
   return (
     <div className="component formations" data-testid='formations-component'>
-      <h1 className="title" id="formations">Formation</h1>
+      <div className="title-container">
+        <h1 className="title" id="formations">Formation</h1>
+        <div className="title-separator"></div>
+      </div>
       <div className="formations-container">
         {formationsList.map((formation, index) => (
           <React.Fragment key={index}>

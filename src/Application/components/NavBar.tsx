@@ -119,7 +119,7 @@ const NavBar = () => {
       </nav>
 
       <div className="nav-hamburger" ref={navHamburger}>
-        <Hamburger toggled={isOpen} toggle={setOpen}/>
+        <Hamburger toggled={isOpen} toggle={setOpen} aria-label="Menu" />
       </div>
     </div>
   );

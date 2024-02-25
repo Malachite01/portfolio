@@ -22,7 +22,10 @@ const Contact = () => {
 
   return (
     <div className="component contact" data-testid='contact-component'>
-      <h1 id="contact" className="title">Contact</h1>
+      <div className="title-container">
+        <h1 id="contact" className="title">Contact</h1>
+        <div className="title-separator"></div>
+      </div>
       <p>Envie de discuter d'un projet ou vous avez simplement une question ? Voici comment me contacter !</p>
       <div className="contact-container">
         {popupVisible && state.succeeded && <p className="popup">Votre message à bien été envoyé ! &ensp;&#10003;</p>}
