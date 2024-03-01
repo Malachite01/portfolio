@@ -417,7 +417,7 @@ nav ul {
   font-family: var(--weird-font);
   color: var(--font-color-white);
 }
-.name span {
+.name b {
   font-family: var(--weird-font-italic);
   font-weight: bold;
   margin-left: 15px;

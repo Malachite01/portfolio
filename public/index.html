@@ -102,9 +102,21 @@
           opacity: 0;
         }
       }
+
+      #blob {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        object-fit: cover;
+        margin: 0 auto;
+        transform: rotate(180deg);
+      }
     </style>
     <noscript>Activez javascript pour assurer le fonctionnement du site.</noscript>
     <div class="loading-component" id="loadingComponent">   
+      <img id="blob" src="%PUBLIC_URL%/img/wave.svg" alt="decorative image">
       <p>Chargement
         <span>.</span> 
         <span>.</span> 
@@ -118,7 +130,7 @@
         const loadingComponent = document.getElementById("loadingComponent");
 
         const handleLoad = () => {
-          loadingComponent.setAttribute("transition-style", "out:wipe:bottom-left");
+          loadingComponent.setAttribute("transition-style", "out:wipe:bottom-right");
           setTimeout(() => {
             loadingComponent.style.display = "none";
           }, 1500);
