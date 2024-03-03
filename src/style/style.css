@@ -548,6 +548,50 @@ nav ul {
 /*!  __________________ */
 /*! |_____SKILLS______| */
 
+#skills-table-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills-intro-phrase {
+  font-family: var(--classic-font);
+  color: var(--font-color-white);
+  margin-bottom: 50px;
+  text-align: left;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.skills-intro-phrase a {
+  color: var(--font-color-white);
+  text-decoration: underline;
+}
+
+.skills-table {
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px){
+  #skills-table-container {
+    overflow-x: scroll;
+  }
+}
+
+.skills-table img {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border-radius: var(--global-radius);
+}
+
+.skills-tabke td {
+  filter: brightness(1);
+}
+
+.skills-table td:hover {
+  filter: brightness(.8);
+}
+
 .skills-bottom-container {
   display: flex;
   flex-direction: column;
