@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03235e08.css",
-    "main.js": "/portfolio/static/js/main.b9ed66fc.js",
+    "main.css": "/portfolio/static/css/main.0a451290.css",
+    "main.js": "/portfolio/static/js/main.eea7e945.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
@@ -17,6 +17,12 @@
     "static/media/ftp.webp": "/portfolio/static/media/ftp.5275729ce6ac346c7e25.webp",
     "static/media/electron-app.webp": "/portfolio/static/media/electron-app.d749f6967f18392acab0.webp",
     "static/media/dashed.svg": "/portfolio/static/media/dashed.e0813883327f29911f665f4c3db729b1.svg",
+    "static/media/c2_5.png": "/portfolio/static/media/c2_5.2166dfc1b0db304cc831.png",
+    "static/media/c2_4.png": "/portfolio/static/media/c2_4.5bc446ab94519fa44d2a.png",
+    "static/media/c1_4.png": "/portfolio/static/media/c1_4.7b3badaacaea1b7fa016.png",
+    "static/media/c2_2.png": "/portfolio/static/media/c2_2.b0ea89a0dcc0cee11f6a.png",
+    "static/media/c3_1.png": "/portfolio/static/media/c3_1.f92eef367a6fa0f2d2d8.png",
+    "static/media/c3_3.png": "/portfolio/static/media/c3_3.b052c32b9acf4a931444.png",
     "static/media/deezer-logo.webp": "/portfolio/static/media/deezer-logo.e17927b42fa99cec6bc5.webp",
     "static/media/noise.webp": "/portfolio/static/media/noise.526d84441deb24e1b2bb.webp",
     "static/media/grafana.svg": "/portfolio/static/media/grafana.b14deb950d137158c8d5e7894691ba32.svg",
@@ -35,12 +41,12 @@
     "static/media/wave.svg": "/portfolio/static/media/wave.768278663c1a68c450c7b26c972ad22f.svg",
     "static/media/arrow_forward.svg": "/portfolio/static/media/arrow_forward.b6f67547223a7085487d018f01010bca.svg",
     "static/media/expand.svg": "/portfolio/static/media/expand.730839144c126385607bf09f84d35c4f.svg",
-    "main.03235e08.css.map": "/portfolio/static/css/main.03235e08.css.map",
-    "main.b9ed66fc.js.map": "/portfolio/static/js/main.b9ed66fc.js.map",
+    "main.0a451290.css.map": "/portfolio/static/css/main.0a451290.css.map",
+    "main.eea7e945.js.map": "/portfolio/static/js/main.eea7e945.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03235e08.css",
-    "static/js/main.b9ed66fc.js"
+    "static/css/main.0a451290.css",
+    "static/js/main.eea7e945.js"
   ]
 }
