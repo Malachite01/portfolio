@@ -551,6 +551,7 @@ nav ul {
 #skills-table-container {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 
 .skills-intro-phrase {
@@ -568,8 +569,8 @@ nav ul {
 }
 
 .skills-table {
-  margin-bottom: 100px;
   margin: 0 auto;
+  color: var(--font-color-grey);
 }
 
 @media screen and (max-width: 1100px){
@@ -589,7 +590,7 @@ nav ul {
 }
 
 .skills-table td:hover {
-  filter: brightness(.8);
+  filter: brightness(.6);
 }
 
 .skills-bottom-container {
@@ -1238,11 +1239,13 @@ nav ul {
 }
 
 #blob {
-  z-index: -5;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 10%);
-  bottom: -20%;
-  width: 70%;
-  opacity: 0.9;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  object-fit: cover;
+  margin: 0 auto;
+  transform: rotate(180deg);
+  opacity: 0.3;
 }

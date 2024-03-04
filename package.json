@@ -59,6 +59,7 @@
     "@types/react-slick": "^0.23.13",
     "gh-pages": "^6.1.1",
     "hamburger-react": "^2.5.0",
+    "jotai": "^2.7.0",
     "match-media-mock": "^0.1.1",
     "react-slick": "^0.30.1"
   }

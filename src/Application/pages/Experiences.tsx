@@ -7,6 +7,7 @@ const Experiences = () => {
   const experiences = [
     {
       color: "#49b9c8",
+      id: "devSecOps",
       image: devSecOps,
       title: "Alternance : Intégration dans une équipe DevSecOps",
       url: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjJtPmHr8GEAxUgVqQEHYc1BAoQFnoECBsQAw&url=https%3A%2F%2Fwww.oracle.com%2Ffr%2Fsecurity%2Fdefinition-approche-dev-sec-ops%2F%23%3A~%3Atext%3DL%2527approche%2520DevSecOps%2520(Development%2520%252D%2Ccondition%2520pr%25C3%25A9alable%2520avant%2520de%2520commencer.&usg=AOvVaw06oM_CxPoA-oqC9wSSh0DV&opi=89978449",
@@ -17,6 +18,7 @@ const Experiences = () => {
     },
     {
       color: "#f37d27",
+      id: "grafana",
       image: grafana,
       title: "Stage : Développement d'un plugin 'Grafana'",
       url: "https://fr.wikipedia.org/wiki/Grafana",
@@ -35,7 +37,7 @@ const Experiences = () => {
       </div>
       <ul className="experiences-list">
         {experiences.map((experience, index) => (
-          <div className="experiences-card" key={index}>
+          <div className="experiences-card" key={index} id={experience.id}>
             <div className="experiences-deco" style={{backgroundColor: experience.color}}></div>
             <a href={experience.url} target="_blank" rel="noreferrer"><img src={experience.image} alt={experience.title} className="experience-image" /></a>
             <b>{experience.date}</b>

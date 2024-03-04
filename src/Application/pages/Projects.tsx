@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useAtom } from "jotai";
+import * as store from "../utils/JotaiStore";
 import electronApp from "../../img/projects/electron-app.webp";
 import ftp from "../../img/projects/ftp.webp";
 import deezerLogo from "../../img/projects/deezer-logo.webp";
@@ -9,6 +11,7 @@ import polyrythm from "../../img/projects/polyrythm.webp";
 import game from "../../img/projects/jeu.webp";
 import noise from "../../img/projects/noise.webp";
 import tri from "../../img/projects/tri-21.webp";
+import topo from "../../img/projects/topo.webp";
 import Card from "../components/Card";
 
 const Projects = () => {
@@ -60,14 +63,24 @@ const Projects = () => {
   };
 
   const projectList = [
-    { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: 'Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." },
-    { gitUrl: "https://github.com/Malachite01/appTransfertMobile", imageSrc: electronApp, title: 'Application electron/nodeJS', description: "Conçue pour transférer automatiquement toutes les photos et fichiers d'un téléphone Android vers un ordinateur en un clic. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." },
-    { gitUrl: "https://github.com/Malachite01/proxy-ftp", imageSrc: ftp, title: 'Proxy FTP', description: "Développement d'un proxy applicatif FTP en C, avec un mode actif et passif. M'a permis de comprendre et appréhender certains concepts de communication réseaux." },
-    { gitUrl: "https://github.com/Malachite01/deezer_to_mp3", imageSrc: deezerLogo, title: 'Deezer to MP3', description: "Un Script Python permettant de sauvegarder localement une playlist Deezer. Utilise l'API de Deezer, et un scrapper youtube pour télécharger." },
-    { gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", imageSrc: polyrythm, title: 'Visualiseur polyrythmique', description: "Un outil affichant simultanément plusieurs motifs rythmiques complexes pour visualiser les relations entre sons et image. Développé avec une approche mathématique, avec Unity C#." },
-    { gitUrl: "https://github.com/Malachite01/Trisomie21-HG", imageSrc: tri, title: 'Application Trisomie 21', description: "Une application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." },
-    { gitUrl: "https://github.com/Malachite01/Image_processing_project", imageSrc: noise, title: "Traitement d'images", description: "Un projet de traitement d'images permettant de réduire le bruit ou d'ajouter du bruit à des images en niveaux de gris en utilisant différents types de traitements mathématiques." },
+    { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: 'Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." , id: "jeu"},
+    { gitUrl: "https://github.com/Malachite01/appTransfertMobile", imageSrc: electronApp, title: 'Application electron/nodeJS', description: "Conçue pour transférer automatiquement toutes les photos et fichiers d'un téléphone Android vers un ordinateur en un clic. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." , id: "transfertAndroid"},
+    { gitUrl: "https://github.com/Malachite01/proxy-ftp", imageSrc: ftp, title: 'Proxy FTP', description: "Développement d'un proxy applicatif FTP en C, avec un mode actif et passif. M'a permis de comprendre et appréhender certains concepts de communication réseaux." , id: "proxy"},
+    { gitUrl: "https://github.com/Malachite01/deezer_to_mp3", imageSrc: deezerLogo, title: 'Deezer to MP3', description: "Un Script Python permettant de sauvegarder localement une playlist Deezer. Utilise l'API de Deezer, et un scrapper youtube pour télécharger." , id: "deezer"},
+    { gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", imageSrc: polyrythm, title: 'Visualiseur polyrythmique', description: "Un outil affichant simultanément plusieurs motifs rythmiques complexes pour visualiser les relations entre sons et image. Développé avec une approche mathématique, avec Unity C#." , id: "polyrythm"},
+    { gitUrl: "https://github.com/Malachite01/Trisomie21-HG", imageSrc: tri, title: 'Application Trisomie 21', description: "Une application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." , id: "triso21"},
+    { gitUrl: "", imageSrc: topo, title: "Création d'une infrastructure réseau", description: "Création d'une infrastructure complexe avec des serveurs, des clients, des routeurs, des switchs, des firewalls, des VLANs, et différents services (DHCP, Web, monitorint, etc..). Utilisant des technologies comme Docker, Esxi. ", id: "infra"},
+    { gitUrl: "https://github.com/Malachite01/Image_processing_project", imageSrc: noise, title: "Traitement d'images", description: "Un projet de traitement d'images permettant de réduire le bruit ou d'ajouter du bruit à des images en niveaux de gris en utilisant différents types de traitements mathématiques." , id: "noise"},
   ];
+
+  const [carouselGoToNumber, ] = useAtom(store.carouselGoToNumber);
+  let sliderRef = useRef<Slider>(null);
+
+  useEffect(() => {
+    if (carouselGoToNumber !== "" && sliderRef.current) {
+      sliderRef.current.slickGoTo(parseInt(carouselGoToNumber));
+    }
+  }, [carouselGoToNumber]);
 
   return (
     <div className="component projects" data-testid='projects-component'>
@@ -75,8 +88,9 @@ const Projects = () => {
         <h1 className="title" id="projects">Projets</h1>
         <div className="title-separator"></div>
       </div>
+
       <div className="slider-container" transition-style="in:wipe:top-right">
-        <Slider {...settings}>
+        <Slider {...settings} ref={sliderRef}>
           {projectList.map((project, index) => (
             <Card 
               gitUrl={project.gitUrl}
@@ -84,6 +98,7 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               index={index}
+              id={project.id}
               key={index}
             />
           ))}

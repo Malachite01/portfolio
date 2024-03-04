@@ -1,4 +1,8 @@
 import React from "react";
+import { useAtom } from "jotai";
+import * as store from "../utils/JotaiStore";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 import Techno from "../components/Techno";
 import t1 from "../../img/skills/t1.png";
 import t2 from "../../img/skills/t2.png";
@@ -36,37 +40,33 @@ const Skills = () => {
   ];
 
   const row1 = [
-    { imageSrc: c1_1, onClick: ""},
-    { imageSrc: c1_2, onClick: ""},
-    { imageSrc: c1_3, onClick: ""},
-    { imageSrc: c1_4, onClick: ""},
-    { imageSrc: c1_5, onClick: ""},
-    { imageSrc: c1_6, onClick: ""},
+    { imageSrc: c1_1, onClick: "#transfertAndroid", projectNumber: "1"},
+    { imageSrc: c1_2, onClick: "#transfertAndroid", projectNumber: "1"},
+    { imageSrc: c1_3, onClick: "#infra", projectNumber: "6"},
+    { imageSrc: c1_4, onClick: "#deezer", projectNumber: "3"},
+    { imageSrc: c1_5, onClick: "#grafana", projectNumber: ""},
+    { imageSrc: c1_6, onClick: "#triso21", projectNumber: "5"},
   ];
 
   const row2 = [
-    { imageSrc: c2_1, onClick: ""},
-    { imageSrc: c2_2, onClick: ""},
-    { imageSrc: c2_3, onClick: ""},
-    { imageSrc: c2_4, onClick: ""},
-    { imageSrc: c2_5, onClick: ""},
-    { imageSrc: c2_6, onClick: ""},
+    { imageSrc: c2_1, onClick: "#transfertAndroid", projectNumber: "1"},
+    { imageSrc: c2_2, onClick: "#noise", projectNumber: "7"},
+    { imageSrc: c2_3, onClick: "#infra", projectNumber: "6"},
+    { imageSrc: c2_4, onClick: "#deezer", projectNumber: "3"},
+    { imageSrc: c2_5, onClick: "#grafana", projectNumber: ""},
+    { imageSrc: c2_6, onClick: "#triso21", projectNumber: "5"},
   ];
 
   const row3 = [
-    { imageSrc: c3_1, onClick: ""},
-    { imageSrc: "", onClick: ""},
-    { imageSrc: c3_3, onClick: ""},
-    { imageSrc: "", onClick: ""},
-    { imageSrc: "", onClick: ""},
-    { imageSrc: c3_6, onClick: ""},
+    { imageSrc: c3_1, onClick: "#triso21", projectNumber: "5"},
+    { imageSrc: "", onClick: "", projectNumber: ""},
+    { imageSrc: c3_3, onClick: "#infra", projectNumber: "6"},
+    { imageSrc: "", onClick: "", projectNumber: ""},
+    { imageSrc: "", onClick: "", projectNumber: ""},
+    { imageSrc: c3_6, onClick: "#infra", projectNumber: "6"},
   ];
 
-  const goToElement = (id: string) => () => {
-    if (id !== "") {
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    }
-  }
+  const [, setCarouselGoToNumber] = useAtom(store.carouselGoToNumber);
 
   return (
     <div className="component skills" data-testid='skills-component'>
@@ -92,22 +92,28 @@ const Skills = () => {
             <tbody>
               <tr>
                 {row1.map((row, index) => (
-                  <td key={index} onClick={goToElement(row.onClick)}>
-                    <img src={row.imageSrc} alt={row.imageSrc}/>
+                  <td key={index} onClick={()=>{setCarouselGoToNumber(row.projectNumber);}}>
+                    <AnchorLink href={row.onClick}>
+                      <img src={row.imageSrc} alt={row.imageSrc}/>
+                    </AnchorLink>
                   </td>
                 ))}
               </tr>
               <tr>
                 {row2.map((row, index) => (
-                  <td key={index} onClick={goToElement(row.onClick)}>
-                    <img src={row.imageSrc} alt={row.imageSrc}/>
+                  <td key={index} onClick={()=>{setCarouselGoToNumber(row.projectNumber);}}>
+                    <AnchorLink href={row.onClick}>
+                      <img src={row.imageSrc} alt={row.imageSrc}/>
+                    </AnchorLink>
                   </td>
                 ))}
               </tr>
               <tr>
                 {row3.map((row, index) => (
-                  <td key={index} onClick={goToElement(row.onClick)}>
-                    {row.imageSrc !== "" && <img src={row.imageSrc} alt={row.imageSrc}/> }
+                  <td key={index} onClick={()=>{setCarouselGoToNumber(row.projectNumber);}}>
+                    <AnchorLink href={row.onClick}>
+                      {row.imageSrc !== "" && <img src={row.imageSrc} alt={row.imageSrc}/> }
+                    </AnchorLink>
                   </td>
                 ))}
               </tr>
