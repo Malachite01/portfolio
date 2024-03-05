@@ -74,12 +74,12 @@ const Skills = () => {
         <h1 className="title" id="skills">Competences</h1>
         <div className="title-separator"></div>
       </div>
-      <p className="skills-intro-phrase">Durant ma formation à l'IUT Informatique Paul Sabatier, voici les compétences que j'ai acquises (cf <a target="_blank" rel="noreferrer" href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">Programme national informatique, page 28</a>) : </p>
+      <p className="skills-intro-phrase">Durant ma formation a l'IUT Informatique Paul Sabatier, voici les compétences que j'ai acquises (cf <a target="_blank" rel="noreferrer" href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">Programme national informatique, page 28</a>) : </p>
 
       <div className="skills-bottom-container">
         <div id="skills-table-container">
           <table className="skills-table">
-            <caption>Cliquez sur une compétences pour voir un projet associé ! </caption>
+            <caption>Cliquez sur une compétence pour voir un projet associé ! </caption>
             <thead>
               <tr>
                 {titles.map((title, index) => (

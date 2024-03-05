@@ -26,7 +26,7 @@ const Contact = () => {
         <h1 id="contact" className="title">Contact</h1>
         <div className="title-separator"></div>
       </div>
-      <p>Envie de discuter d'un projet ou vous avez simplement une question ? Voici comment me contacter !</p>
+      <p>Envie de discuter d'un projet où vous avez simplement une question ? Voici comment me contacter !</p>
       <div className="contact-container">
         {popupVisible && state.succeeded && <p className="popup">Votre message à bien été envoyé ! &ensp;&#10003;</p>}
         {popupVisible && state.errors && <p className="popup error">Erreur lors de l'envoi du message. &ensp;&#10008;</p>}

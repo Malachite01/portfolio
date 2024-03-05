@@ -25,7 +25,7 @@ const Experiences = () => {
       date: "2022 - 2023",
       location: "CTI Toulouse (DataCenters de l'Assurance Maladie)",
       locationUrl: "https://maps.app.goo.gl/byei18GYNjjKh5i7A",
-      description: "Réalisation d'un plugin Grafana (Un outil de visualisation de données), afin de générer des rapports PDF issus des serveurs du CTI, et leur envoi planifié à une liste de déstinataires (fonction de 'reporting/alerting')."
+      description: "Réalisation d'un plugin Grafana (Un outil de visualisation de données), afin de générer des rapports PDF issus des serveurs du CTI, et leur envoi planifié à une liste de destinataires (fonction de 'reporting/alerting')."
     }
   ]; 
 
