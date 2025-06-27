@@ -17,8 +17,8 @@ const Home = () => {
           <img src={selfPortrait} className="self-portrait" transition-style="in:wipe:right" alt="selfie" />
           <div className="home-text-container">
             <h1 className="name">Mathieu <b>Antunes</b></h1>
-            <h2 className="job" transition-style="in:wipe:bottom">Étudiant en Informatique</h2>
-            <p transition-style="in:wipe:right">Actuellement en 3° année de BUT Informatique en spécialité déploiement d'applications communicantes et sécurisées</p>
+            <h2 className="job" transition-style="in:wipe:bottom">Étudiant en Informatique et Reseaux</h2>
+            <p transition-style="in:wipe:right">Actuellement en 3° année à l'INSA de Toulouse, Ingénieur et Réseaux.</p>
             <div className="home-button-container" transition-style="in:wipe:bottom">
               <AnchorLink href="#contact"><button className="classic-button white">Contact <img src={arrowBot} alt="Aller vers contact" /></button></AnchorLink>
               <a href={cv} download='CV_Mathieu_ANTUNES.pdf'><button className="classic-button white">Mon CV  <img src={download} alt="Télécharger mon CV" style={{width :"25px", marginTop: "2.5px"}} /></button></a>

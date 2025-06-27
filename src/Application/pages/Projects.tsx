@@ -2,8 +2,6 @@ import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useAtom } from "jotai";
-import * as store from "../utils/JotaiStore";
 import electronApp from "../../img/projects/electron-app.webp";
 import ftp from "../../img/projects/ftp.webp";
 import deezerLogo from "../../img/projects/deezer-logo.webp";
@@ -73,14 +71,7 @@ const Projects = () => {
     { gitUrl: "https://github.com/Malachite01/Image_processing_project", imageSrc: noise, title: "Traitement d'images", description: "Un projet de traitement d'images permettant de réduire le bruit ou d'ajouter du bruit à des images en niveaux de gris en utilisant différents types de traitements mathématiques." , id: "noise"},
   ];
 
-  const [carouselGoToNumber, ] = useAtom(store.carouselGoToNumber);
   let sliderRef = useRef<Slider>(null);
-
-  useEffect(() => {
-    if (carouselGoToNumber !== "" && sliderRef.current) {
-      sliderRef.current.slickGoTo(parseInt(carouselGoToNumber));
-    }
-  }, [carouselGoToNumber]);
 
   return (
     <div className="component projects" data-testid='projects-component'>

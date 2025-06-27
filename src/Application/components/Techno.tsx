@@ -6,14 +6,17 @@ const Techno = () => {
   ];
   
   return (
-    <React.Fragment>
-      <h2>Technologies maitrisées</h2>
+    <div className="component projects" data-testid='projects-component'>
+      <div className="title-container">
+        <h1 className="title" id="projects">Technologies maitrisees</h1>
+        <div className="title-separator"></div>
+      </div>
       <div className="skills-img-container">
         {iconList.map((icon, index) => (
           <img key={index} src={`https://skillicons.dev/icons?i=${icon}`} alt={icon} />
         ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 }
  
