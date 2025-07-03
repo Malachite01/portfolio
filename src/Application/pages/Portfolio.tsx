@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 
 const Portfolio = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div id="top">
       <Home />
@@ -15,7 +16,7 @@ const Portfolio = () => {
       <Projects />
       <Techno/>
       <Contact />
-      <p id="fin-de-page">©Mathieu ANTUNES 2024/2025 - Site réalisé en ReactJs, CI/CD avec GitHub Pages</p>
+      <p id="fin-de-page">©Mathieu ANTUNES 2024/{currentYear} - Site réalisé en ReactJs, CI/CD avec GitHub Pages</p>
     </div>
 
   );
