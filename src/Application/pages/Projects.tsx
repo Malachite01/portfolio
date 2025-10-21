@@ -9,6 +9,7 @@ import polyrythm from "../../img/projects/polyrythm.webp";
 import game from "../../img/projects/jeu.webp";
 import noise from "../../img/projects/noise.webp";
 import tri from "../../img/projects/tri-21.webp";
+import demi from "../../img/projects/demi.webp";
 import topo from "../../img/projects/topo.webp";
 import Card from "../components/Card";
 
@@ -61,14 +62,90 @@ const Projects = () => {
   };
 
   const projectList = [
-    { gitUrl: "https://github.com/Malachite01", imageSrc: game, title: 'Jeu video', description: "Un jeu vidéo en cours de développement en autodidacte, développé avec Unity C#." , id: "jeu"},
-    { gitUrl: "https://github.com/Malachite01/appTransfertMobile", imageSrc: electronApp, title: 'Application electron/nodeJS', description: "Conçue pour transférer automatiquement toutes les photos et fichiers d'un téléphone Android vers un ordinateur en un clic. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." , id: "transfertAndroid"},
-    { gitUrl: "https://github.com/Malachite01/proxy-ftp", imageSrc: ftp, title: 'Proxy FTP', description: "Développement d'un proxy applicatif FTP en C, avec un mode actif et passif. M'a permis de comprendre et appréhender certains concepts de communication réseaux." , id: "proxy"},
-    { gitUrl: "https://github.com/Malachite01/deezer_to_mp3", imageSrc: deezerLogo, title: 'Deezer to MP3', description: "Un Script Python permettant de sauvegarder localement une playlist Deezer. Utilise l'API de Deezer, et un scrapper youtube pour télécharger." , id: "deezer"},
-    { gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", imageSrc: polyrythm, title: 'Visualiseur polyrythmique', description: "Un outil affichant simultanément plusieurs motifs rythmiques complexes pour visualiser les relations entre sons et image. Développé avec une approche mathématique, avec Unity C#." , id: "polyrythm"},
-    { gitUrl: "https://github.com/Malachite01/Trisomie21-HG", imageSrc: tri, title: 'Application Trisomie 21', description: "Une application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." , id: "triso21"},
-    { gitUrl: "", imageSrc: topo, title: "Création d'une infrastructure réseau", description: "Création d'une infrastructure complexe avec des serveurs, des clients, des routeurs, des switchs, des firewalls, des VLANs, et différents services (DHCP, Web, monitorint, etc..). Utilisant des technologies comme Docker, Esxi. ", id: "infra"},
-    { gitUrl: "https://github.com/Malachite01/Image_processing_project", imageSrc: noise, title: "Traitement d'images", description: "Un projet de traitement d'images permettant de réduire le bruit ou d'ajouter du bruit à des images en niveaux de gris en utilisant différents types de traitements mathématiques." , id: "noise"},
+    { 
+        gitUrl: "https://github.com/Malachite01", 
+        imageSrc: game, 
+        title: 'Jeu vidéo d\'aventure', 
+        description: "Un jeu vidéo d'aventure en cours de développement avec Unity C#. Ce projet est très ambitieux et chronophage, le dépôt reste privé pour le moment." , 
+        id: "jeu"
+    },
+    { 
+        gitUrl: "https://tahinraw.fr", 
+        imageSrc: "https://tahinraw.fr/og-image.png",
+        title: 'Tahin.raw Portfolio', 
+        description: "Portfolio de photographie entièrement développé en ReactJS, HTML et CSS, axé sur la création d'un site web réactif et performant pour ordinateur et mobile. Optimisation SEO, méta-tags et configuration DNS personnalisée." , 
+        id: "tahinraw"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/appTransfertMobile", 
+        imageSrc: electronApp, 
+        title: 'Application Electron/Node.js', 
+        description: "Application conçue pour transférer automatiquement toutes les photos d'un téléphone Android vers un ordinateur. Son objectif est de simplifier le processus de création de sauvegardes locales régulières." , 
+        id: "transfertAndroid"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/proxy-ftp", 
+        imageSrc: ftp, 
+        title: 'Proxy FTP', 
+        description: "Proxy FTP développé en C, compatible avec les commandes pwd, cd, ls, get, etc. Il est compatible avec les modes actif et passif." , 
+        id: "proxy"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/tsock-Insa", 
+        imageSrc: null,
+        title: 'Communication client-serveur', 
+        description: "Projet simple de communication client-serveur en C, implémentant un modèle client-serveur de base utilisant TCP et UDP (pour montrer la perte de données). Comprend la création de sockets, la construction de messages et la gestion des erreurs." , 
+        id: "tsock"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/mic-tcp-insa", 
+        imageSrc: null,
+        title: 'Implémentation TCP simplifiée', 
+        description: "Implémentation TCP simplifiée en C, conçue pour simuler les mécanismes TCP de base tels que les numéros de séquence, les acquittements et la gestion de connexion. Gère également la perte de paquets." , 
+        id: "micTcp"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/Image_processing_project", 
+        imageSrc: noise, 
+        title: "Traitement d'images", 
+        description: "Projet de traitement d'images pour débruiter ou ajouter du bruit, avec différents types de traitements, sur des images en niveaux de gris." , 
+        id: "noise"
+    },
+    { 
+        gitUrl: "https://malachite01.github.io/prog_web/", 
+        imageSrc: demi,
+        title: 'Démineur web', 
+        description: "Premier projet à l'INSA Toulouse. L'objectif était de développer un jeu de puzzle en JavaScript vanilla, HTML et CSS." , 
+        id: "minesweeper"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/deezer_to_mp3", 
+        imageSrc: deezerLogo, 
+        title: 'Deezer to MP3', 
+        description: "Script Python pour faire une sauvegarde locale de vos playlists Deezer. Utilise l'API Deezer et un scraper YouTube pour télécharger." , 
+        id: "deezer"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/polyrhythm_visualizer", 
+        imageSrc: polyrythm, 
+        title: 'Visualiseur polyrythmique', 
+        description: "Visualiseur développé avec une approche mathématique en Unity C#, affichant les relations entre sons et images à travers des motifs rythmiques complexes." , 
+        id: "polyrythm"
+    },
+    { 
+        gitUrl: "https://github.com/Malachite01/SAE-Trisomie21-HG", 
+        imageSrc: tri, 
+        title: 'Application Trisomie 21 HG', 
+        description: "Application web d'économie de jetons créée pour l'association 'Trisomie 21 Haute-Garonne' afin d'aider les enfants autistes et trisomiques." , 
+        id: "triso21"
+    },
+    { 
+        gitUrl: "", 
+        imageSrc: topo, 
+        title: "Infrastructure réseau complexe", 
+        description: "Création d'une infrastructure complexe avec des serveurs, clients, routeurs, switchs, firewalls, VLANs et différents services (DHCP, Web, monitoring, etc.). Utilisant des technologies comme Docker et ESXi." , 
+        id: "infra"
+    }
   ];
 
   let sliderRef = useRef<Slider>(null);

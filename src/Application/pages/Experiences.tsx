@@ -9,7 +9,7 @@ const Experiences = () => {
       color: "#49b9c8",
       id: "devSecOps",
       image: devSecOps,
-      title: "Alternance : Intégration dans une équipe DevSecOps",
+      title: "Alternance : Apprenti TechLead DevSecOps",
       url: "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjJtPmHr8GEAxUgVqQEHYc1BAoQFnoECBsQAw&url=https%3A%2F%2Fwww.oracle.com%2Ffr%2Fsecurity%2Fdefinition-approche-dev-sec-ops%2F%23%3A~%3Atext%3DL%2527approche%2520DevSecOps%2520(Development%2520%252D%2Ccondition%2520pr%25C3%25A9alable%2520avant%2520de%2520commencer.&usg=AOvVaw06oM_CxPoA-oqC9wSSh0DV&opi=89978449",
       date: "2023 - 2024",
       location: "CTI Toulouse (DataCenters de l'Assurance Maladie)",

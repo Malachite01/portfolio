@@ -314,9 +314,10 @@ nav ul {
 
 .component:first-child {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 .component:not(:first-child) {
-  padding-top: 100px;
+  padding-top: 40px;
 }
 
 
@@ -565,12 +566,12 @@ nav ul {
 
 .formations {
   position: relative;
-  margin: 50px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .formations-container {
   width: 80%;
-  margin: 0 auto;
+  margin: -10px auto;
 }
 
 .formation {
@@ -579,7 +580,7 @@ nav ul {
   align-items: center;
   text-decoration: none;
   font-family: var(--classic-font);
-  margin-top: 30px;
+  margin-top: 0px;
   padding-bottom: 30px;
   transition: all .3s ease-in-out;
 }
@@ -594,7 +595,7 @@ nav ul {
 }
 .dashed {
   z-index: -1;
-  width: 200px;
+  width: 150px;
   position: absolute;
   right: 50%;
   margin-top: -6%;
@@ -606,12 +607,13 @@ nav ul {
 .formation h2 {
   font-size: 2em;
   color: var(--font-color-white);
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .formation .diplome {
   font-size: 1.5em;
   color: var(--font-color-white);
-  margin-bottom: 20px;
+  margin-bottom: -15px;
+  margin-top: 0px;
 }
 .formation p {
   color: var(--font-color-grey);
@@ -622,6 +624,11 @@ nav ul {
   margin-right: 50px;
   border-radius: var(--global-radius);
   /* border: 4px dashed var(--font-color-white); */
+}
+@media screen and (max-width: 920px) {
+  .dashed {
+    display: none;
+  }
 }
 @media screen and (max-width: 650px) {
   .formation {
@@ -651,12 +658,12 @@ nav ul {
 .experiences-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  align-items: stretch;
+  justify-items: center;
   padding: 0;
-  width: 80%;
-  margin: 80px auto 0 auto;
+  width: 70%;
+  margin: 30px auto 40px auto;
 }
-
 .experiences-card {
   position: relative;
   display: flex;
@@ -665,16 +672,17 @@ nav ul {
   background-color: #f2e7d9;
   border-radius: 25px;
   width: 70%;
-  height: 100%;
+  min-height: 400px;
   padding: 20px;
   font-family: var(--classic-font);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .experiences-deco {
-  position: relative;
+  position: absolute;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  top: -20px;
-  width: calc(100% + 40px);
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 30px;
   border-radius: 25px 25px 0 0;
 }
@@ -744,8 +752,12 @@ nav ul {
   }
 }
 
-/*!  __________________ */
+/*!  _________________e_ */
 /*! |_____PROJECTS_____| */
+
+.component.projects {
+  margin-bottom: 40px;
+}
 
 .slider-container {
   position: relative;
