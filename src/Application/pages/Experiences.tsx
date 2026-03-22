@@ -2,12 +2,12 @@ import React from "react";
 import devSecOps from "../../img/devsecops.webp";
 import grafana from "../../img/grafana.svg";
 import location from "../../img/location.svg";
-import security from "../../img/security.svg";
+import security from "../../img/security.png";
 
 const Experiences = () => {
   const experiences = [
     {
-      color: "#7B34C7",
+      color: "#5A1D81",
       id: "security",
       image: security,
       title: "Stage : Intégration de la Sécurité dans les projets de développement",
