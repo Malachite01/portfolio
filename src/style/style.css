@@ -657,7 +657,7 @@ nav ul {
 
 .experiences-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: stretch;
   justify-items: center;
   padding: 0;
