@@ -7,7 +7,7 @@ import security from "../../img/security.svg";
 const Experiences = () => {
   const experiences = [
     {
-      color: "7B34C7",
+      color: "#7B34C7",
       id: "security",
       image: security,
       title: "Stage : Intégration de la Sécurité dans les projets de développement",
