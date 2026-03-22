@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4abdf821.css",
-    "main.js": "/portfolio/static/js/main.62cd3fdc.js",
+    "main.js": "/portfolio/static/js/main.2b4f0533.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
     "static/media/cv.pdf": "/portfolio/static/media/cv.47a6dbd06f497e8d7bb6.pdf",
     "static/media/demi.webp": "/portfolio/static/media/demi.f0a78729124cd8c523c4.webp",
     "static/media/self-portrait.webp": "/portfolio/static/media/self-portrait.66716ecbc831979beaa1.webp",
-    "static/media/security.svg": "/portfolio/static/media/security.1c7a911ffe9d30d2bd5ba731c8cb0d72.svg",
     "static/media/OpenSans-Italic.ttf": "/portfolio/static/media/OpenSans-Italic.ac68c5e0338c8b22b82f.ttf",
     "static/media/OpenSans.ttf": "/portfolio/static/media/OpenSans.34835cd554b7b71732e2.ttf",
     "static/media/iut.webp": "/portfolio/static/media/iut.f58e2a2159ec1fac0ddf.webp",
@@ -20,6 +19,7 @@
     "static/media/jeu.webp": "/portfolio/static/media/jeu.02a3c7b45bad3eaf3520.webp",
     "static/media/ftp.webp": "/portfolio/static/media/ftp.5275729ce6ac346c7e25.webp",
     "static/media/electron-app.webp": "/portfolio/static/media/electron-app.d749f6967f18392acab0.webp",
+    "static/media/security.png": "/portfolio/static/media/security.176f98591ff675cec030.png",
     "static/media/dashed.svg": "/portfolio/static/media/dashed.e0813883327f29911f665f4c3db729b1.svg",
     "static/media/deezer-logo.webp": "/portfolio/static/media/deezer-logo.e17927b42fa99cec6bc5.webp",
     "static/media/noise.webp": "/portfolio/static/media/noise.526d84441deb24e1b2bb.webp",
@@ -40,11 +40,11 @@
     "static/media/arrow_forward.svg": "/portfolio/static/media/arrow_forward.b6f67547223a7085487d018f01010bca.svg",
     "static/media/expand.svg": "/portfolio/static/media/expand.730839144c126385607bf09f84d35c4f.svg",
     "main.4abdf821.css.map": "/portfolio/static/css/main.4abdf821.css.map",
-    "main.62cd3fdc.js.map": "/portfolio/static/js/main.62cd3fdc.js.map",
+    "main.2b4f0533.js.map": "/portfolio/static/js/main.2b4f0533.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4abdf821.css",
-    "static/js/main.62cd3fdc.js"
+    "static/js/main.2b4f0533.js"
   ]
 }
