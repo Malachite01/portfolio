@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ef281e91.css",
-    "main.js": "/portfolio/static/js/main.2bee0b56.js",
+    "main.js": "/portfolio/static/js/main.62cd3fdc.js",
     "static/js/787.e6489973.chunk.js": "/portfolio/static/js/787.e6489973.chunk.js",
     "static/media/Playfair-Italic.ttf": "/portfolio/static/media/Playfair-Italic.2e38efce0349bc24b049.ttf",
     "static/media/Playfair.ttf": "/portfolio/static/media/Playfair.01893c39cd1a403ef0a5.ttf",
@@ -40,11 +40,11 @@
     "static/media/arrow_forward.svg": "/portfolio/static/media/arrow_forward.b6f67547223a7085487d018f01010bca.svg",
     "static/media/expand.svg": "/portfolio/static/media/expand.730839144c126385607bf09f84d35c4f.svg",
     "main.ef281e91.css.map": "/portfolio/static/css/main.ef281e91.css.map",
-    "main.2bee0b56.js.map": "/portfolio/static/js/main.2bee0b56.js.map",
+    "main.62cd3fdc.js.map": "/portfolio/static/js/main.62cd3fdc.js.map",
     "787.e6489973.chunk.js.map": "/portfolio/static/js/787.e6489973.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef281e91.css",
-    "static/js/main.2bee0b56.js"
+    "static/js/main.62cd3fdc.js"
   ]
 }
