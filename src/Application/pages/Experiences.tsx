@@ -2,9 +2,21 @@ import React from "react";
 import devSecOps from "../../img/devsecops.webp";
 import grafana from "../../img/grafana.svg";
 import location from "../../img/location.svg";
+import security from "../../img/security.svg";
 
 const Experiences = () => {
   const experiences = [
+    {
+      color: "7B34C7",
+      id: "security",
+      image: security,
+      title: "Stage : Intégration de la Sécurité dans les projets de développement",
+      url: "https://www.bpce-si.fr/",
+      date: "2026",
+      location: "BPCE Solutions Informatiques",
+      locationUrl: "https://maps.app.goo.gl/6ELFb9Zg149D9WYo6",
+      description: "Intégré au Centre d’Expertise Sécurité Métier (équipe Support Sécurité Projets), je mène des travaux d'architecture, de sécurité, de spécification et d'implémentation dans divers projets : modélisation de scénarios d’attaques, analyses de risques, cadrage de tests d’intrusion, rédaction et participation à la mise en place d’un référentiel de sécurité pour les systèmes d’IA, développement de scripts Python. Mission toujours en cours."
+    },
     {
       color: "#49b9c8",
       id: "devSecOps",
