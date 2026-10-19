@@ -570,8 +570,8 @@ nav ul {
 }
 
 .formations-container {
-  width: 80%;
-  margin: -10px auto;
+  width: min(80%, 1100px);
+  margin: -10px auto 0;
 }
 
 .formation {
@@ -581,8 +581,8 @@ nav ul {
   text-decoration: none;
   font-family: var(--classic-font);
   margin-top: 0px;
-  padding-bottom: 30px;
-  transition: all .3s ease-in-out;
+  padding: 0 18px 26px;
+  transition: filter .3s ease-in-out, transform .3s ease-in-out;
 }
 .separator:not(:last-child) {
   margin: 0 auto;
@@ -595,33 +595,40 @@ nav ul {
 }
 .dashed {
   z-index: -1;
-  width: 150px;
+  width: 115px;
   position: absolute;
   right: 50%;
-  margin-top: -6%;
+  margin-top: -4%;
   pointer-events: none;
 }
 .dashed:last-child {
   display: none;
 }
 .formation h2 {
-  font-size: 2em;
+  font-size: 1.75em;
+  line-height: 1.2;
   color: var(--font-color-white);
-  margin-bottom: 0px;
+  margin: 0 0 4px;
 }
 .formation .diplome {
-  font-size: 1.5em;
+  font-size: 1.25em;
+  line-height: 1.35;
   color: var(--font-color-white);
-  margin-bottom: -15px;
+  margin-bottom: 8px;
   margin-top: 0px;
 }
 .formation p {
   color: var(--font-color-grey);
+  line-height: 1.45;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .formation img {
-  width: 150px;
-  margin-right: 50px;
+  width: 132px;
+  height: 92px;
+  object-fit: contain;
+  margin-right: 38px;
   border-radius: var(--global-radius);
   /* border: 4px dashed var(--font-color-white); */
 }
@@ -633,19 +640,26 @@ nav ul {
 @media screen and (max-width: 650px) {
   .formation {
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 48px;
+    padding: 0 8px 26px;
+    text-align: center;
   }
   .formation img {
     margin-right: 0px;
+    margin-bottom: 18px;
   }
 }
 @media screen and (max-width: 650px) {
   .formation h2 {
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+  .formation .diplome {
+    font-size: 1.1em;
   }
 }
 .formation:hover {
-  filter: brightness(.8);
+  filter: brightness(.9);
+  transform: translateY(-2px);
 }
 
 /*!  __________________ */
@@ -657,24 +671,32 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: stretch;
-  justify-items: center;
+  gap: 30px;
   padding: 0;
   width: 70%;
   margin: 30px auto 40px auto;
+  list-style: none;
 }
 .experiences-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #f2e7d9;
+  align-items: stretch;
+  background: linear-gradient(145deg, #f7eddf 0%, #eadcca 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 25px;
-  width: 70%;
-  min-height: 400px;
-  padding: 20px;
+  min-width: 0;
+  min-height: 440px;
+  padding: 36px 24px 24px;
   font-family: var(--classic-font);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   box-sizing: border-box;
+  overflow: hidden;
+  transition: transform .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.experiences-card:hover {
+  transform: translateY(-6px);
+  box-shadow: rgba(17, 17, 26, 0.15) 0px 12px 24px, rgba(17, 17, 26, 0.08) 0px 18px 40px;
 }
 .experiences-deco {
   position: absolute;
@@ -685,58 +707,89 @@ nav ul {
   height: 30px;
   border-radius: 25px 25px 0 0;
 }
-.experiences-card .experience-image {
-  height: 150px;
-  max-width: 100%;
-  object-fit: contain;
-  padding: 15px;
-  border-radius: 25px;
-  transition: all .3s ease-in-out;
+.experience-image-link {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 138px;
+  margin-bottom: 20px;
+  padding: 14px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 16px;
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
 }
-.experiences-card .experience-image:hover {
-  background-color: color-mix(in srgb, rgb(242, 231, 217) 50%, grey 10%);
+.experience-image-link:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.02);
+}
+.experiences-card .experience-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.experience-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
 }
 .experiences-card b {
   font-size: 1.2em;
   color: var(--body-bg-color);
+  text-align: center;
 }
 .experiences-card h2 {
   color: var(--body-bg-color);
   text-align: center;
-  font-size: 1.6em;
-  margin-bottom: 0;
+  font-size: 1.45em;
+  line-height: 1.25;
+  margin: 10px 0 0;
 }
 .experiences-card h3 {
-  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 28px;
+  margin: 12px 0 0;
   font-size: 1em;
+}
+.experience-location-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: 0 0 20px;
 }
 .experiences-card h3 a {
   text-decoration: none;
   color: color-mix(in srgb, var(--body-bg-color), #ffffff 20%);
+  text-align: center;
 }
 .experiences-card .separator {
-  margin: 0 auto;
-  width: 60%;
+  width: 70%;
   height: 2px;
+  margin: 20px auto;
   border-radius: 25px;
   background-color: rgba(196, 174, 174, 0.253);
-  margin-bottom: 20px;
 }
 .experiences-card p {
   color: color-mix(in srgb, var(--body-bg-color), #ffffff 40%);
   margin: 0;
+  line-height: 1.55;
+  white-space: pre-line;
 }
 
 /* ── Tablette large (3 → 2 colonnes) ── */
 @media screen and (max-width: 1600px) {
   .experiences-list {
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
     width: 90%;
   }
   .experiences-card {
-    width: 90%;
-    min-height: 360px;
+    min-height: 420px;
   }
 }
 
@@ -744,15 +797,13 @@ nav ul {
 @media screen and (max-width: 950px) {
   .experiences-list {
     grid-template-columns: 1fr;
-    gap: 30px;
     width: 95%;
   }
   .experiences-card {
-    width: 85%;
     min-height: unset;
   }
-  .experiences-card .experience-image {
-    height: 130px;
+  .experience-image-link {
+    height: 150px;
   }
 }
 
@@ -764,11 +815,11 @@ nav ul {
     box-sizing: border-box;
   }
   .experiences-card {
-    width: 100%;
     padding: 20px 16px;
+    padding-top: 36px;
   }
-  .experiences-card .experience-image {
-    height: 100px;
+  .experience-image-link {
+    height: 120px;
   }
   .experiences-card h2 {
     font-size: 1.3em;

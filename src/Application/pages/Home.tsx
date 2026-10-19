@@ -18,7 +18,7 @@ const Home = () => {
           <div className="home-text-container">
             <h1 className="name">Mathieu <b>Antunes</b></h1>
             <h2 className="job" transition-style="in:wipe:bottom">Étudiant en Informatique et Reseaux</h2>
-            <p transition-style="in:wipe:right">Actuellement en 3° année à l'INSA de Toulouse, Ingénieur et Réseaux.</p>
+            <p transition-style="in:wipe:right">Actuellement en 2° année d'ingénieur à l'INSA de Toulouse (4° année INSA), Ingénieur Informatique et Réseaux.</p>
             <div className="home-button-container" transition-style="in:wipe:bottom">
               <AnchorLink href="#contact"><button className="classic-button white">Contact <img src={arrowBot} alt="Aller vers contact" /></button></AnchorLink>
               <a href={cv} download='CV_Mathieu_ANTUNES.pdf'><button className="classic-button white">Mon CV  <img src={download} alt="Télécharger mon CV" style={{width :"25px", marginTop: "2.5px"}} /></button></a>
